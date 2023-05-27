@@ -1,4 +1,4 @@
-const Clientes = require('./models/cliente');
+const Clientes = require('../models/cliente');
 const losclientes = {};
 
 losclientes.getClientes = async(req,res) => {
@@ -9,9 +9,7 @@ losclientes.getClientes = async(req,res) => {
 losclientes.createClientes = async(req,res) => {
     const cliente = new Clientes(req.body);
     await cliente.save();
-    res.json({
-        Status: 'Cliente registrado'
-    });
+    res.json({Status: 'Cliente registrado'});
 }
 
 losclientes.modificarClientes = async(req, res) => {

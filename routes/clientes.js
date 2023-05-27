@@ -8,5 +8,4 @@ router.post('/', losclientes.createClientes);
 router.put('/:id', losclientes.modificarClientes);
 router.delete('/:id', losclientes.eliminarlosClientes);
 
-
 module.express = router;
