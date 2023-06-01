@@ -1,13 +1,14 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require('../config/Database');
 
-const ClientesShema = new Schema({
+const ClientesShema = new mongoose.Schema({
     id: {type: Number, min: 0, max: 5000},
-    nombre: {type: String, require: true},
-    telefono: {type: Number},
-    ubicación: {type: String},
+    Nombre: {type: String, required: true},
+    Telefono: {type: String, required: true},
+    Ubicacion: {centro: {type: Array, required: true}, Zoom: {type: Number, default: 20}},
     TotalCompras: {type: Number},
-    HistoricoCompras: {type: Number}
+    HistoricoCompras: {type: Array, required: []}
 });
 
-module.exports = mongoose.model('Clientes', ClientesShema);
+const cliente = mongoose.model('Clientes', ClientesShema);
+
+module.exports = cliente;

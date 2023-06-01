@@ -1,17 +1,23 @@
 const express = require('express');
-const morgan = require('morgan');
+const logger = require('morgan');
 const app = express();
 const path = require('path');
 
-const mirouter = require('./routes/clientes')
-
-//const{mongoose} = require('/')
+const mirouter = require('./routes/enrutamiento')
+const env = require('dotenv');
+env.config();
+app.use(logger('dev'));
 
 app.set('view engine', 'ejs');
-
-app.set('port', process.env.PORT || 4300);
-app.use(morgan('dev'));
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.use('/api/clientes', mirouter);
+app.use('/api',mirouter);
 
-console.log('En linea, puerto ',app.get('port'));
+const PORT = 4300;
+
+//app.get('/clientes', (req,res) =>{res.render('../views/clientes');});
+
+app.listen( process.env.PORT || 4300,()=>{
+    console.log('En línea, puerto', PORT );
+});
