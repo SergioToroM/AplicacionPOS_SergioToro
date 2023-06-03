@@ -1,12 +1,12 @@
-const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const mongoose = require('../config/Database');
 
-const VendedoresShema = new Schema({
-    id: {type: Number, min: 0, max: 5000},
-    nombre: {type: String, require: true},
-    documento: {type: Number, require: true},
+const VendedoresSchema = new mongoose.Schema({
+    Nombre: {type: String, require: true},
+    Documento: {type: String, require: true},
     VentasDespachadas: {Type: Number}
 });
 
-module.exports = mongoose.model('Vendedores', VendedoresShema);
+const vendedores = mongoose.model('Vendedores', VendedoresSchema);
+
+module.exports = vendedores;
 

@@ -1,4 +1,5 @@
 const cliente = require('../models/cliente');
+const vendedor = require('../models/vendedores');
 
 ///CLIENTES
 // Listar
@@ -9,39 +10,46 @@ exports.dbclientes = async(req,res) => {
     });
 }
 
-// exports.createClientes = async(req,res) => {
-//     console.log(req.body)
-//     const nuevoCliente = cliente({
-//         id : req.body.id,
-//         nombre : req.body.nombre,
-//         telefono : req.body.telefono,
-//         ubicacion : req.body.ubicacion,
-//         totalCompras : req.body.totalCompras,
-//         historicoCompras : req.body.historicoCompras
-//     });
-//     await nuevoCliente.save();
-//     res.redirect('clientes');
-// };
+exports.clientes =(req, res)=>{ //render asocia un documento que contiene lo que va mostar al usuario  //
+    res.render('clientes');
+}
 
-// dbclientes.createClientes = async(req,res) => {
-//     const cliente = new Clientes(req.body);
-//     await cliente.save();
-//     res.json({Status: 'Cliente registrado'});
-// }
+exports.createClientes = async(req,res) => {
+    const Clientes = cliente({
+        Nombre : req.body.Nombre,
+        Telefono : req.body.Telefono,
+        Ubicacion : req.body.Ubicacion,
+        TotalCompras : req.body.TotalCompras,
+        HistoricoCompras : req.body.HistoricoCompras
+    });
+    Clientes.save();
+    res.redirect('/api/Clientes');
+    console.log('Clientes');
+    
+};
 
-// dbclientes.modificarClientes = async(req, res) => {
-//     const{id} = req.params;
-//     const losclientesEdit = {
-//         nombre: req.body.nombre,
-//         telefono: req.body.telefono,
-//         ubicacion: req.body.ubicacion
-//     };
-//     await Clientes.findByIdAndUpdate(id, {$set: losclientesEdit}, {new: true});
-//     res.json({Status: 'Cliente actualizado'});
-// }
 
-// dbclientes.eliminarlosClientes = async(req,res) => {
-//     await Clientes.findByIdAndDelete(req.params.id);
-//     res.json({Status: 'Cliente eliminado'});
-// }
+///VENDEDORES
+// Listar
+exports.dbvendedores = async(req,res) => {
+    let vendedorlista = await vendedor.find();
+    res.render('listarvendedores', {
+        'listavendedores': vendedorlista
+    });
+}
 
+exports.vendedores =(req, res)=>{ //render asocia un documento que contiene lo que va mostar al usuario  //
+    res.render('vendedores');
+}
+
+exports.createVendedores = async(req,res) => {
+    const Vendedores = vendedores({
+        Nombre : req.body.Nombre,
+        Documento : req.body.Documento,
+        VentasDespachadas : req.body.VentasDespachadas
+    });
+    Vendedores.save();
+    res.redirect('/api/Vendedores');
+    console.log('Vendedores');
+    
+};

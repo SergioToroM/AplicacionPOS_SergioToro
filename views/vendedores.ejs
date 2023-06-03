@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <%- include('head'); %>
+    <title>Módulo Vendedores</title>
+    
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        .button {
+          border: none;
+          color: white;
+          padding: 8px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 15px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+        
+        .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #4CAF50;
+        }
+        
+        .button1:hover {
+          background-color: #4CAF50;
+          color: white;
+        }
+
+    </style>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/api/clientes">Clientes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">- Empty -</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+</head>
+<body>
+    
+      
+</body>
+
+<body class="container">
+<header>
+    <%- include('header'); %>
+</header>
+
+<main>
+    <div class="form-group">
+        <h1 style="text-align: center;">Registro vendedores</h1>
+        <form action="/api/agregar" method="post">
+            Nombre: <input class="form-control" type="text" name="name" id="idnombre"><br>
+            Documento: <input class="form-control" type="text" name="doc" id="iddocumento"><br>
+            Ventas despachadas: <input class="form-control" type="text" name="ventasdesp" id="idventasDespachadas"><br>
+            <button class="button button1" type="submit" placeholder=".form-control-lg">Registrar</button>
+    </form>
+</main>
+
+<footer>
+    <%- include('footer'); %>
+</footer>
+
+</body>
+</html>
