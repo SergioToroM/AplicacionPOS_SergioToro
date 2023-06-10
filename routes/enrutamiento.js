@@ -16,6 +16,8 @@ router.post('/agregarv', dbvendedores.createVendedores);
 
 router.get('/productos', dbproductos.dbproductos);
 
+// router.get('/excel', descargarExcel.descargarExcel);
+
 router.get('/correo', enviarcorreo.nodemailer);
 
 
