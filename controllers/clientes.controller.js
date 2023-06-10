@@ -1,5 +1,6 @@
 const cliente = require('../models/cliente');
 const vendedor = require('../models/vendedores');
+const products = require ('../models/productos');
 
 ///CLIENTES
 // Listar
@@ -23,7 +24,7 @@ exports.createClientes = async(req,res) => {
         HistoricoCompras : req.body.HistoricoCompras
     });
     Clientes.save();
-    res.redirect('/api/Clientes');
+    res.redirect('/api/listarclientes');
     console.log('Clientes');
     
 };
@@ -38,18 +39,35 @@ exports.dbvendedores = async(req,res) => {
     });
 }
 
-exports.vendedores =(req, res)=>{ //render asocia un documento que contiene lo que va mostar al usuario  //
+exports.vendedores =(req, res)=>{ 
     res.render('vendedores');
 }
 
 exports.createVendedores = async(req,res) => {
-    const Vendedores = vendedores({
+    console.log(req.body);
+    const Vendedores = new vendedor({
         Nombre : req.body.Nombre,
         Documento : req.body.Documento,
         VentasDespachadas : req.body.VentasDespachadas
     });
-    Vendedores.save();
-    res.redirect('/api/Vendedores');
+    await Vendedores.save();
+    res.redirect('/api/listarvendedores');
     console.log('Vendedores');
     
 };
+
+
+///PRODUCTOS
+// Listar
+exports.dbproductos = async(req,res) => {
+    let productoslista = await products.find();
+    res.render('productos', {
+        'listaproductos': productoslista
+    });
+}
+
+exports.productos = (req, res)=>{ 
+    res.render('productos', {
+        'listaproductos': productoslista
+    });
+}
