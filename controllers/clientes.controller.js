@@ -60,14 +60,22 @@ exports.createVendedores = async(req,res) => {
 ///PRODUCTOS
 // Listar
 exports.dbproductos = async(req,res) => {
+    console.log(products);
     let productoslista = await products.find();
+    console.log(productoslista);
     res.render('productos', {
         'listaproductos': productoslista
     });
 }
 
-exports.productos = (req, res)=>{ 
-    res.render('productos', {
-        'listaproductos': productoslista
-    });
-}
+
+// exports.productos = (req, res)=>{ 
+//     res.render('productos'); 
+// }
+
+// exports.productos = (req, res)=>{ 
+//     let productoslista = await products.find();
+//     res.render('productos', {
+//         'listaproductos': productoslista
+//     });
+// }
