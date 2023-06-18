@@ -1,0 +1,1802 @@
+[
+  {
+    "referencia": "XSQS93KX",
+    "nombre": "Bolso YYY",
+    "descripcion": "Lorem adipiscing sit elit ipsum",
+    "stock": 61,
+    "precio": "10.26",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "4E03ZXKP",
+    "nombre": "Camiseta QQQ",
+    "descripcion": "Lorem Lorem sit elit Lorem",
+    "stock": 27,
+    "precio": "3.27",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QEHRTYL2",
+    "nombre": "Gafas SSS",
+    "descripcion": "dolor elit ipsum Lorem dolor amet adipiscing adipiscing Lorem amet",
+    "stock": 8,
+    "precio": "55.91",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "ZVRN77TL",
+    "nombre": "Camiseta BBB",
+    "descripcion": "sit dolor sit Lorem ipsum Lorem consectetur ipsum amet adipiscing",
+    "stock": 92,
+    "precio": "21.58",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LONH1KC4",
+    "nombre": "Zapatos JJJ",
+    "descripcion": "Lorem ipsum dolor Lorem dolor",
+    "stock": 80,
+    "precio": "7.35",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "8B2H4GXM",
+    "nombre": "Gafas OOO",
+    "descripcion": "ipsum amet consectetur consectetur adipiscing consectetur ipsum ipsum dolor",
+    "stock": 69,
+    "precio": "89.58",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "E1G13IQ8",
+    "nombre": "Pantalón QQQ",
+    "descripcion": "consectetur adipiscing Lorem ipsum Lorem amet amet elit consectetur",
+    "stock": 40,
+    "precio": "47.84",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "UEXO0VVZ",
+    "nombre": "Sombrero WWW",
+    "descripcion": "ipsum Lorem adipiscing elit sit consectetur Lorem amet ipsum",
+    "stock": 28,
+    "precio": "79.31",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "EVR2M41I",
+    "nombre": "Reloj LLL",
+    "descripcion": "dolor ipsum dolor adipiscing adipiscing dolor Lorem consectetur adipiscing Lorem",
+    "stock": 45,
+    "precio": "53.87",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "SNPBK67G",
+    "nombre": "Zapatos JJJ",
+    "descripcion": "sit amet amet adipiscing amet amet elit elit consectetur",
+    "stock": 63,
+    "precio": "29.13",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1GUQMD9G",
+    "nombre": "Camiseta LLL",
+    "descripcion": "sit adipiscing dolor sit elit Lorem ipsum dolor",
+    "stock": 34,
+    "precio": "56.20",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "HJRA68P3",
+    "nombre": "Pantalón UUU",
+    "descripcion": "adipiscing Lorem amet sit ipsum adipiscing amet dolor dolor ipsum",
+    "stock": 75,
+    "precio": "42.48",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "PL09VSVH",
+    "nombre": "Sombrero WWW",
+    "descripcion": "adipiscing consectetur consectetur amet elit Lorem dolor ipsum adipiscing",
+    "stock": 31,
+    "precio": "12.42",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LO770E2W",
+    "nombre": "Bolso TTT",
+    "descripcion": "Lorem sit sit adipiscing sit ipsum amet adipiscing elit",
+    "stock": 64,
+    "precio": "79.82",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "X3KQ1EAN",
+    "nombre": "Camiseta TTT",
+    "descripcion": "adipiscing dolor ipsum elit Lorem amet",
+    "stock": 16,
+    "precio": "80.92",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "SO7KOXMA",
+    "nombre": "Pantalón HHH",
+    "descripcion": "consectetur Lorem adipiscing dolor ipsum dolor ipsum dolor",
+    "stock": 51,
+    "precio": "68.12",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "B9QJF2AL",
+    "nombre": "Zapatos EEE",
+    "descripcion": "consectetur consectetur ipsum ipsum adipiscing ipsum",
+    "stock": 24,
+    "precio": "14.60",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LKSQ4H9D",
+    "nombre": "Gafas PPP",
+    "descripcion": "ipsum adipiscing amet elit sit",
+    "stock": 50,
+    "precio": "24.40",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "EZRAQ2AM",
+    "nombre": "Gafas BBB",
+    "descripcion": "sit sit sit consectetur amet ipsum amet elit sit ipsum",
+    "stock": 88,
+    "precio": "37.64",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "IUMXCH8L",
+    "nombre": "Gafas VVV",
+    "descripcion": "dolor dolor dolor Lorem elit Lorem",
+    "stock": 65,
+    "precio": "4.30",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "ZAU1SOY6",
+    "nombre": "Pantalón MMM",
+    "descripcion": "Lorem adipiscing ipsum consectetur dolor dolor adipiscing adipiscing amet",
+    "stock": 64,
+    "precio": "1.36",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "2COPYPOS",
+    "nombre": "Zapatos DDD",
+    "descripcion": "consectetur ipsum elit consectetur dolor elit sit",
+    "stock": 96,
+    "precio": "70.57",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "CQ40YA8A",
+    "nombre": "Pantalón ZZZ",
+    "descripcion": "consectetur amet dolor sit ipsum dolor",
+    "stock": 45,
+    "precio": "88.44",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6BCBIVSF",
+    "nombre": "Reloj DDD",
+    "descripcion": "dolor ipsum dolor consectetur sit Lorem sit",
+    "stock": 29,
+    "precio": "85.04",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "AF4WSE9S",
+    "nombre": "Sombrero XXX",
+    "descripcion": "dolor adipiscing elit Lorem consectetur sit elit amet ipsum ipsum",
+    "stock": 50,
+    "precio": "38.10",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "NRI712G1",
+    "nombre": "Pantalón UUU",
+    "descripcion": "sit consectetur Lorem Lorem dolor elit dolor Lorem Lorem amet",
+    "stock": 65,
+    "precio": "13.09",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "0BG1Y7LV",
+    "nombre": "Zapatos III",
+    "descripcion": "Lorem consectetur dolor dolor ipsum dolor dolor ipsum",
+    "stock": 8,
+    "precio": "62.67",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "9GZVQYCP",
+    "nombre": "Camiseta OOO",
+    "descripcion": "sit dolor consectetur elit adipiscing amet ipsum",
+    "stock": 14,
+    "precio": "95.77",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "03LKIKDO",
+    "nombre": "Pantalón LLL",
+    "descripcion": "ipsum consectetur Lorem amet consectetur consectetur",
+    "stock": 2,
+    "precio": "99.44",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "807NR02M",
+    "nombre": "Zapatos RRR",
+    "descripcion": "elit consectetur adipiscing Lorem consectetur dolor consectetur Lorem sit",
+    "stock": 36,
+    "precio": "51.35",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "9457YSV7",
+    "nombre": "Sombrero FFF",
+    "descripcion": "amet Lorem elit amet elit",
+    "stock": 65,
+    "precio": "89.03",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "4YKNQW7J",
+    "nombre": "Zapatos TTT",
+    "descripcion": "Lorem consectetur adipiscing ipsum consectetur amet amet amet elit",
+    "stock": 38,
+    "precio": "31.60",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QHMLZ5EZ",
+    "nombre": "Reloj JJJ",
+    "descripcion": "dolor ipsum Lorem adipiscing consectetur ipsum adipiscing consectetur Lorem",
+    "stock": 65,
+    "precio": "96.13",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "7JYWXPQW",
+    "nombre": "Bolso JJJ",
+    "descripcion": "amet adipiscing Lorem dolor sit",
+    "stock": 98,
+    "precio": "49.21",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YUQJWCC2",
+    "nombre": "Pantalón HHH",
+    "descripcion": "amet elit elit consectetur dolor amet",
+    "stock": 4,
+    "precio": "96.71",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "61K41WPR",
+    "nombre": "Gafas MMM",
+    "descripcion": "amet Lorem consectetur dolor ipsum",
+    "stock": 35,
+    "precio": "90.51",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "S7ZBFZQE",
+    "nombre": "Gafas DDD",
+    "descripcion": "amet elit adipiscing adipiscing elit sit ipsum",
+    "stock": 77,
+    "precio": "20.58",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WQ5UQC8B",
+    "nombre": "Bolso III",
+    "descripcion": "sit consectetur ipsum sit dolor ipsum ipsum ipsum amet consectetur",
+    "stock": 26,
+    "precio": "29.92",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "28SS7W7F",
+    "nombre": "Pantalón UUU",
+    "descripcion": "Lorem ipsum sit sit Lorem ipsum ipsum",
+    "stock": 49,
+    "precio": "26.92",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "IVWZ6QJ4",
+    "nombre": "Sombrero SSS",
+    "descripcion": "amet adipiscing Lorem amet elit elit amet",
+    "stock": 35,
+    "precio": "54.54",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1O259P8C",
+    "nombre": "Pantalón QQQ",
+    "descripcion": "amet consectetur adipiscing consectetur dolor ipsum",
+    "stock": 52,
+    "precio": "33.19",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "D4HNFLL4",
+    "nombre": "Bolso FFF",
+    "descripcion": "Lorem Lorem adipiscing adipiscing amet elit Lorem",
+    "stock": 92,
+    "precio": "4.60",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "X908TH7Y",
+    "nombre": "Sombrero HHH",
+    "descripcion": "Lorem consectetur adipiscing elit elit Lorem sit",
+    "stock": 81,
+    "precio": "52.70",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "0ZZGZDLM",
+    "nombre": "Gafas RRR",
+    "descripcion": "dolor amet ipsum amet amet sit sit dolor sit consectetur",
+    "stock": 4,
+    "precio": "78.27",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "I8PVHIOL",
+    "nombre": "Pantalón XXX",
+    "descripcion": "Lorem adipiscing amet elit Lorem ipsum consectetur consectetur amet",
+    "stock": 76,
+    "precio": "1.35",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OIQJO3L9",
+    "nombre": "Camiseta UUU",
+    "descripcion": "Lorem Lorem amet amet dolor amet adipiscing adipiscing",
+    "stock": 57,
+    "precio": "72.12",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "AEVU6C0X",
+    "nombre": "Reloj III",
+    "descripcion": "ipsum ipsum dolor dolor adipiscing elit amet amet consectetur elit",
+    "stock": 25,
+    "precio": "85.54",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "B2O4AOBY",
+    "nombre": "Bolso VVV",
+    "descripcion": "elit Lorem elit sit sit Lorem dolor ipsum ipsum",
+    "stock": 88,
+    "precio": "82.41",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YSSDVBFI",
+    "nombre": "Camiseta DDD",
+    "descripcion": "sit dolor amet elit ipsum ipsum elit",
+    "stock": 40,
+    "precio": "45.32",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "8FUK8WF8",
+    "nombre": "Reloj TTT",
+    "descripcion": "sit elit amet consectetur amet amet",
+    "stock": 95,
+    "precio": "31.79",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "W6GHSG05",
+    "nombre": "Bolso WWW",
+    "descripcion": "elit adipiscing elit ipsum Lorem amet",
+    "stock": 85,
+    "precio": "83.58",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "UAWSU6EK",
+    "nombre": "Reloj III",
+    "descripcion": "sit elit ipsum dolor Lorem",
+    "stock": 100,
+    "precio": "64.93",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6WP6R7EL",
+    "nombre": "Camiseta SSS",
+    "descripcion": "Lorem consectetur ipsum sit elit elit ipsum elit sit ipsum",
+    "stock": 78,
+    "precio": "46.60",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "91RTJCYO",
+    "nombre": "Bolso QQQ",
+    "descripcion": "dolor amet dolor adipiscing consectetur ipsum sit",
+    "stock": 67,
+    "precio": "33.30",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LGOJLW10",
+    "nombre": "Camiseta RRR",
+    "descripcion": "adipiscing ipsum Lorem adipiscing elit adipiscing ipsum dolor elit ipsum",
+    "stock": 1,
+    "precio": "89.19",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "PWOCT65D",
+    "nombre": "Camiseta PPP",
+    "descripcion": "Lorem adipiscing consectetur ipsum dolor Lorem sit Lorem",
+    "stock": 3,
+    "precio": "29.73",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "XRRSF6A7",
+    "nombre": "Camiseta TTT",
+    "descripcion": "elit adipiscing Lorem dolor ipsum dolor amet adipiscing",
+    "stock": 94,
+    "precio": "74.30",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "CDQREF7I",
+    "nombre": "Zapatos JJJ",
+    "descripcion": "elit adipiscing sit dolor consectetur dolor adipiscing",
+    "stock": 90,
+    "precio": "43.08",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YC7X23UW",
+    "nombre": "Camiseta BBB",
+    "descripcion": "amet ipsum adipiscing elit Lorem Lorem elit dolor elit",
+    "stock": 51,
+    "precio": "54.15",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "KE7P77BG",
+    "nombre": "Bolso VVV",
+    "descripcion": "consectetur consectetur elit amet dolor elit consectetur adipiscing",
+    "stock": 60,
+    "precio": "64.77",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "TZL0JH6E",
+    "nombre": "Bolso GGG",
+    "descripcion": "Lorem adipiscing sit ipsum Lorem amet",
+    "stock": 62,
+    "precio": "18.43",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "9H2ELJO7",
+    "nombre": "Reloj GGG",
+    "descripcion": "elit amet consectetur Lorem adipiscing adipiscing",
+    "stock": 74,
+    "precio": "88.22",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "3JM1UZ37",
+    "nombre": "Camiseta BBB",
+    "descripcion": "elit elit amet consectetur adipiscing adipiscing amet",
+    "stock": 42,
+    "precio": "87.32",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "ZYUXNGQB",
+    "nombre": "Camiseta QQQ",
+    "descripcion": "consectetur amet sit ipsum ipsum sit",
+    "stock": 25,
+    "precio": "46.46",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WTE8BHAJ",
+    "nombre": "Zapatos OOO",
+    "descripcion": "consectetur dolor consectetur ipsum sit Lorem ipsum ipsum dolor Lorem",
+    "stock": 2,
+    "precio": "14.95",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QN9F48AP",
+    "nombre": "Zapatos MMM",
+    "descripcion": "adipiscing sit sit Lorem adipiscing elit",
+    "stock": 35,
+    "precio": "71.22",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6FXXHGZF",
+    "nombre": "Bolso UUU",
+    "descripcion": "elit amet adipiscing adipiscing dolor adipiscing consectetur elit sit amet",
+    "stock": 16,
+    "precio": "26.15",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "A574Y7VE",
+    "nombre": "Reloj VVV",
+    "descripcion": "consectetur ipsum consectetur elit ipsum",
+    "stock": 69,
+    "precio": "31.98",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "B3ZRO35G",
+    "nombre": "Pantalón JJJ",
+    "descripcion": "elit ipsum Lorem adipiscing dolor consectetur amet",
+    "stock": 55,
+    "precio": "28.65",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "8A82D6C8",
+    "nombre": "Sombrero YYY",
+    "descripcion": "amet adipiscing adipiscing elit ipsum adipiscing elit dolor elit",
+    "stock": 91,
+    "precio": "8.66",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "P4H4AN3X",
+    "nombre": "Zapatos GGG",
+    "descripcion": "consectetur amet amet amet Lorem dolor ipsum ipsum elit adipiscing",
+    "stock": 63,
+    "precio": "46.55",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LG3TFBE2",
+    "nombre": "Reloj BBB",
+    "descripcion": "sit elit elit Lorem dolor sit amet elit dolor Lorem",
+    "stock": 17,
+    "precio": "82.20",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "7OFQEW9A",
+    "nombre": "Sombrero DDD",
+    "descripcion": "Lorem Lorem consectetur adipiscing consectetur adipiscing",
+    "stock": 77,
+    "precio": "45.13",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "CRLS9RQO",
+    "nombre": "Pantalón MMM",
+    "descripcion": "elit ipsum dolor consectetur dolor consectetur",
+    "stock": 55,
+    "precio": "49.65",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "U600WH89",
+    "nombre": "Reloj ZZZ",
+    "descripcion": "sit sit consectetur Lorem dolor",
+    "stock": 14,
+    "precio": "22.56",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "2H9X7Q0N",
+    "nombre": "Bolso NNN",
+    "descripcion": "elit dolor adipiscing adipiscing adipiscing",
+    "stock": 13,
+    "precio": "22.39",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "RC0UZDCN",
+    "nombre": "Camiseta KKK",
+    "descripcion": "sit dolor consectetur ipsum adipiscing amet",
+    "stock": 18,
+    "precio": "29.38",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "R4HVKZB5",
+    "nombre": "Zapatos KKK",
+    "descripcion": "elit dolor ipsum adipiscing ipsum",
+    "stock": 3,
+    "precio": "31.86",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "KQ6QP7VW",
+    "nombre": "Pantalón XXX",
+    "descripcion": "sit amet adipiscing ipsum adipiscing sit dolor dolor dolor ipsum",
+    "stock": 21,
+    "precio": "14.44",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WBH1CO61",
+    "nombre": "Bolso HHH",
+    "descripcion": "amet amet amet dolor amet sit adipiscing dolor consectetur",
+    "stock": 3,
+    "precio": "78.72",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YXTX0D3X",
+    "nombre": "Reloj TTT",
+    "descripcion": "adipiscing adipiscing ipsum consectetur Lorem elit elit Lorem dolor adipiscing",
+    "stock": 20,
+    "precio": "6.12",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OUI68F5Q",
+    "nombre": "Bolso TTT",
+    "descripcion": "adipiscing elit elit consectetur amet adipiscing amet consectetur ipsum",
+    "stock": 4,
+    "precio": "4.34",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "GWKPC3EZ",
+    "nombre": "Reloj PPP",
+    "descripcion": "elit dolor consectetur ipsum sit Lorem amet ipsum Lorem",
+    "stock": 98,
+    "precio": "70.14",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "KGMSV1VJ",
+    "nombre": "Pantalón DDD",
+    "descripcion": "Lorem adipiscing amet consectetur ipsum dolor",
+    "stock": 36,
+    "precio": "79.40",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "LGVFEXOF",
+    "nombre": "Zapatos YYY",
+    "descripcion": "sit ipsum adipiscing Lorem ipsum",
+    "stock": 23,
+    "precio": "49.74",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WF8EXLS2",
+    "nombre": "Gafas WWW",
+    "descripcion": "adipiscing dolor elit ipsum amet amet adipiscing dolor elit",
+    "stock": 4,
+    "precio": "55.13",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "5KYIQ9HH",
+    "nombre": "Zapatos ZZZ",
+    "descripcion": "Lorem elit sit amet adipiscing ipsum adipiscing sit elit",
+    "stock": 73,
+    "precio": "96.83",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "70K33J27",
+    "nombre": "Pantalón YYY",
+    "descripcion": "ipsum Lorem ipsum consectetur Lorem adipiscing",
+    "stock": 38,
+    "precio": "5.01",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FW53Z7KI",
+    "nombre": "Camiseta BBB",
+    "descripcion": "sit ipsum elit elit adipiscing amet elit elit adipiscing",
+    "stock": 26,
+    "precio": "99.52",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "NLEIE2UT",
+    "nombre": "Sombrero PPP",
+    "descripcion": "sit adipiscing amet consectetur ipsum ipsum ipsum",
+    "stock": 75,
+    "precio": "40.18",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "40UNNK6X",
+    "nombre": "Camiseta MMM",
+    "descripcion": "amet dolor dolor ipsum adipiscing",
+    "stock": 95,
+    "precio": "2.12",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "65LX8HCQ",
+    "nombre": "Pantalón WWW",
+    "descripcion": "adipiscing ipsum sit consectetur Lorem Lorem dolor",
+    "stock": 11,
+    "precio": "43.38",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "U01P8UNH",
+    "nombre": "Zapatos AAA",
+    "descripcion": "adipiscing Lorem ipsum amet elit dolor adipiscing",
+    "stock": 33,
+    "precio": "78.14",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "ANFEU9YH",
+    "nombre": "Bolso NNN",
+    "descripcion": "amet ipsum sit sit adipiscing amet sit ipsum ipsum dolor",
+    "stock": 53,
+    "precio": "17.80",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6MA03YST",
+    "nombre": "Camiseta QQQ",
+    "descripcion": "elit dolor adipiscing amet amet dolor elit ipsum dolor",
+    "stock": 74,
+    "precio": "25.46",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "XTCD07CM",
+    "nombre": "Pantalón JJJ",
+    "descripcion": "Lorem elit sit dolor elit",
+    "stock": 38,
+    "precio": "41.85",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1RQIA2WL",
+    "nombre": "Reloj RRR",
+    "descripcion": "consectetur Lorem amet ipsum ipsum consectetur elit",
+    "stock": 80,
+    "precio": "30.39",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "JWAWN52B",
+    "nombre": "Bolso MMM",
+    "descripcion": "amet Lorem amet ipsum amet amet",
+    "stock": 16,
+    "precio": "85.71",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6N6BF8GN",
+    "nombre": "Sombrero FFF",
+    "descripcion": "adipiscing amet ipsum ipsum adipiscing elit",
+    "stock": 82,
+    "precio": "36.88",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "ARDPGEWA",
+    "nombre": "Sombrero XXX",
+    "descripcion": "amet adipiscing adipiscing amet ipsum",
+    "stock": 41,
+    "precio": "69.28",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FIDXNZLH",
+    "nombre": "Pantalón NNN",
+    "descripcion": "sit consectetur adipiscing amet sit elit elit consectetur sit",
+    "stock": 12,
+    "precio": "92.51",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "0SY3EUVV",
+    "nombre": "Pantalón CCC",
+    "descripcion": "amet ipsum dolor dolor Lorem elit",
+    "stock": 86,
+    "precio": "17.73",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "S6HBN9AC",
+    "nombre": "Camiseta EEE",
+    "descripcion": "consectetur elit consectetur ipsum sit consectetur amet sit dolor",
+    "stock": 80,
+    "precio": "55.21",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "DBKW99UY",
+    "nombre": "Pantalón FFF",
+    "descripcion": "dolor ipsum elit elit dolor sit dolor",
+    "stock": 80,
+    "precio": "22.03",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "J53QYWLS",
+    "nombre": "Reloj XXX",
+    "descripcion": "Lorem Lorem Lorem ipsum dolor adipiscing amet",
+    "stock": 56,
+    "precio": "96.19",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "58POBKZU",
+    "nombre": "Gafas UUU",
+    "descripcion": "elit elit elit ipsum elit dolor ipsum elit sit",
+    "stock": 22,
+    "precio": "36.44",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "SZFAWAL5",
+    "nombre": "Reloj SSS",
+    "descripcion": "consectetur adipiscing consectetur adipiscing consectetur dolor consectetur amet Lorem amet",
+    "stock": 50,
+    "precio": "8.05",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "THRFB5MC",
+    "nombre": "Sombrero LLL",
+    "descripcion": "consectetur ipsum amet ipsum elit consectetur",
+    "stock": 10,
+    "precio": "45.88",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "C5IW8NGV",
+    "nombre": "Reloj MMM",
+    "descripcion": "consectetur consectetur Lorem amet amet",
+    "stock": 100,
+    "precio": "76.52",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1JKPWB01",
+    "nombre": "Reloj RRR",
+    "descripcion": "Lorem adipiscing ipsum amet amet adipiscing sit elit sit",
+    "stock": 42,
+    "precio": "83.00",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OTGWE4HR",
+    "nombre": "Pantalón QQQ",
+    "descripcion": "dolor dolor amet sit Lorem consectetur",
+    "stock": 21,
+    "precio": "1.79",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "RPYC6E8I",
+    "nombre": "Reloj PPP",
+    "descripcion": "consectetur dolor dolor elit Lorem",
+    "stock": 56,
+    "precio": "29.70",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YLZP76E8",
+    "nombre": "Bolso MMM",
+    "descripcion": "sit Lorem amet ipsum amet dolor elit",
+    "stock": 61,
+    "precio": "34.30",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "24MHD3PQ",
+    "nombre": "Zapatos RRR",
+    "descripcion": "sit consectetur ipsum amet amet amet amet elit",
+    "stock": 67,
+    "precio": "28.97",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "MK69HAKX",
+    "nombre": "Reloj YYY",
+    "descripcion": "adipiscing sit consectetur sit sit adipiscing",
+    "stock": 36,
+    "precio": "30.60",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "HHEA2ZFA",
+    "nombre": "Zapatos EEE",
+    "descripcion": "ipsum elit sit dolor sit ipsum adipiscing consectetur",
+    "stock": 41,
+    "precio": "49.84",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FJMM9KMY",
+    "nombre": "Camiseta DDD",
+    "descripcion": "Lorem Lorem consectetur adipiscing elit consectetur ipsum consectetur sit sit",
+    "stock": 96,
+    "precio": "44.08",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OJ6HHAR6",
+    "nombre": "Pantalón TTT",
+    "descripcion": "amet dolor dolor dolor adipiscing dolor consectetur",
+    "stock": 29,
+    "precio": "18.54",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "3EVDCE2W",
+    "nombre": "Pantalón YYY",
+    "descripcion": "ipsum consectetur Lorem sit ipsum consectetur",
+    "stock": 97,
+    "precio": "3.95",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6FNQRP1E",
+    "nombre": "Reloj CCC",
+    "descripcion": "adipiscing dolor sit consectetur adipiscing sit Lorem ipsum sit",
+    "stock": 16,
+    "precio": "15.23",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "SNQB1A2P",
+    "nombre": "Pantalón FFF",
+    "descripcion": "adipiscing Lorem dolor sit ipsum consectetur Lorem Lorem",
+    "stock": 87,
+    "precio": "93.59",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "P0OY6MCX",
+    "nombre": "Camiseta HHH",
+    "descripcion": "amet adipiscing amet amet Lorem amet consectetur",
+    "stock": 60,
+    "precio": "42.95",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "G7TIVUGA",
+    "nombre": "Camiseta YYY",
+    "descripcion": "elit dolor adipiscing ipsum consectetur",
+    "stock": 58,
+    "precio": "7.08",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "C1MLI6YA",
+    "nombre": "Bolso RRR",
+    "descripcion": "ipsum sit ipsum dolor ipsum Lorem dolor adipiscing consectetur dolor",
+    "stock": 88,
+    "precio": "26.05",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FHU177X3",
+    "nombre": "Reloj WWW",
+    "descripcion": "elit Lorem dolor adipiscing consectetur Lorem Lorem Lorem consectetur Lorem",
+    "stock": 90,
+    "precio": "24.23",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "RB6CNBZQ",
+    "nombre": "Sombrero HHH",
+    "descripcion": "adipiscing ipsum Lorem amet sit elit amet elit",
+    "stock": 25,
+    "precio": "91.20",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WDKC14JX",
+    "nombre": "Sombrero III",
+    "descripcion": "dolor ipsum amet elit consectetur consectetur consectetur",
+    "stock": 12,
+    "precio": "3.82",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "MWS80GA2",
+    "nombre": "Zapatos UUU",
+    "descripcion": "adipiscing amet consectetur consectetur sit",
+    "stock": 47,
+    "precio": "22.89",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "542EVCE5",
+    "nombre": "Reloj TTT",
+    "descripcion": "dolor consectetur consectetur elit Lorem ipsum ipsum",
+    "stock": 58,
+    "precio": "59.44",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "XBDOZTUU",
+    "nombre": "Pantalón OOO",
+    "descripcion": "ipsum amet ipsum amet dolor",
+    "stock": 86,
+    "precio": "91.93",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "DIN8XCNF",
+    "nombre": "Bolso UUU",
+    "descripcion": "elit ipsum dolor sit elit sit elit",
+    "stock": 83,
+    "precio": "38.27",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "01A1A76L",
+    "nombre": "Gafas WWW",
+    "descripcion": "dolor Lorem elit ipsum elit",
+    "stock": 55,
+    "precio": "24.45",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "7FLPSM9Y",
+    "nombre": "Camiseta BBB",
+    "descripcion": "Lorem elit amet Lorem dolor",
+    "stock": 74,
+    "precio": "12.87",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "2HW9OXY6",
+    "nombre": "Sombrero JJJ",
+    "descripcion": "Lorem amet ipsum adipiscing adipiscing adipiscing ipsum adipiscing",
+    "stock": 92,
+    "precio": "3.60",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QSUMZ3FA",
+    "nombre": "Gafas KKK",
+    "descripcion": "dolor elit dolor adipiscing Lorem",
+    "stock": 8,
+    "precio": "56.33",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "7BA7D0VT",
+    "nombre": "Zapatos UUU",
+    "descripcion": "adipiscing ipsum dolor adipiscing Lorem ipsum dolor consectetur",
+    "stock": 16,
+    "precio": "88.59",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "9BPXQCGE",
+    "nombre": "Pantalón HHH",
+    "descripcion": "sit adipiscing elit sit amet amet ipsum",
+    "stock": 57,
+    "precio": "8.07",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "XIZRRYFV",
+    "nombre": "Camiseta HHH",
+    "descripcion": "elit Lorem dolor ipsum elit",
+    "stock": 96,
+    "precio": "93.63",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "0Y8528DR",
+    "nombre": "Camiseta III",
+    "descripcion": "dolor ipsum Lorem adipiscing sit consectetur sit elit adipiscing dolor",
+    "stock": 88,
+    "precio": "26.62",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OWSMCM9V",
+    "nombre": "Gafas YYY",
+    "descripcion": "dolor Lorem Lorem dolor consectetur dolor elit ipsum",
+    "stock": 32,
+    "precio": "27.67",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "3NI37K0F",
+    "nombre": "Pantalón FFF",
+    "descripcion": "elit adipiscing adipiscing consectetur sit amet sit adipiscing dolor",
+    "stock": 46,
+    "precio": "7.20",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "H2TTLTMS",
+    "nombre": "Zapatos EEE",
+    "descripcion": "amet sit dolor ipsum ipsum consectetur Lorem amet sit",
+    "stock": 14,
+    "precio": "30.73",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YRVI0EJ7",
+    "nombre": "Reloj RRR",
+    "descripcion": "amet adipiscing amet dolor ipsum ipsum Lorem consectetur Lorem",
+    "stock": 58,
+    "precio": "74.53",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "H7G15197",
+    "nombre": "Bolso EEE",
+    "descripcion": "sit amet ipsum ipsum elit ipsum amet consectetur",
+    "stock": 93,
+    "precio": "26.33",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "5U56BYAN",
+    "nombre": "Gafas AAA",
+    "descripcion": "sit elit elit consectetur sit amet amet dolor adipiscing",
+    "stock": 29,
+    "precio": "5.89",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "O77D04GC",
+    "nombre": "Pantalón GGG",
+    "descripcion": "sit elit amet dolor amet elit amet",
+    "stock": 14,
+    "precio": "17.51",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "V1RTV8QB",
+    "nombre": "Zapatos OOO",
+    "descripcion": "dolor Lorem adipiscing adipiscing Lorem",
+    "stock": 66,
+    "precio": "58.08",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "U8NTSPE2",
+    "nombre": "Gafas JJJ",
+    "descripcion": "Lorem consectetur consectetur sit consectetur Lorem adipiscing Lorem",
+    "stock": 27,
+    "precio": "14.19",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "Q74IUBVK",
+    "nombre": "Camiseta YYY",
+    "descripcion": "ipsum Lorem amet sit adipiscing",
+    "stock": 52,
+    "precio": "5.58",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "BAR30H23",
+    "nombre": "Reloj TTT",
+    "descripcion": "sit adipiscing sit dolor dolor elit ipsum amet elit amet",
+    "stock": 32,
+    "precio": "52.37",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "R8LJFTSO",
+    "nombre": "Gafas AAA",
+    "descripcion": "sit consectetur amet amet adipiscing ipsum Lorem",
+    "stock": 29,
+    "precio": "82.03",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "G5K1ZCFU",
+    "nombre": "Reloj OOO",
+    "descripcion": "ipsum dolor consectetur consectetur adipiscing elit elit amet adipiscing dolor",
+    "stock": 48,
+    "precio": "26.11",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "DN2QDIFM",
+    "nombre": "Pantalón GGG",
+    "descripcion": "Lorem sit ipsum dolor amet ipsum dolor amet",
+    "stock": 3,
+    "precio": "76.63",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "0M1BLHRU",
+    "nombre": "Zapatos LLL",
+    "descripcion": "amet adipiscing sit dolor consectetur elit consectetur",
+    "stock": 62,
+    "precio": "71.30",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "WOSAFH1C",
+    "nombre": "Gafas LLL",
+    "descripcion": "ipsum adipiscing amet amet elit elit dolor ipsum elit dolor",
+    "stock": 86,
+    "precio": "72.75",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "NDQ4KXAP",
+    "nombre": "Camiseta NNN",
+    "descripcion": "ipsum ipsum sit ipsum ipsum elit amet consectetur",
+    "stock": 87,
+    "precio": "53.46",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "VR25DWDK",
+    "nombre": "Gafas CCC",
+    "descripcion": "sit amet ipsum elit consectetur amet ipsum elit sit ipsum",
+    "stock": 8,
+    "precio": "62.97",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "8PQNLMWP",
+    "nombre": "Bolso TTT",
+    "descripcion": "adipiscing consectetur Lorem adipiscing consectetur",
+    "stock": 92,
+    "precio": "59.89",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "F5S1S5OK",
+    "nombre": "Pantalón GGG",
+    "descripcion": "sit dolor dolor Lorem elit consectetur dolor dolor elit amet",
+    "stock": 49,
+    "precio": "99.28",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "8JQWN8KC",
+    "nombre": "Zapatos UUU",
+    "descripcion": "ipsum adipiscing elit adipiscing consectetur elit elit",
+    "stock": 20,
+    "precio": "22.62",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "U4AFTWX8",
+    "nombre": "Reloj QQQ",
+    "descripcion": "dolor dolor dolor ipsum Lorem dolor amet",
+    "stock": 84,
+    "precio": "37.38",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "SCJKQHAR",
+    "nombre": "Reloj NNN",
+    "descripcion": "dolor dolor elit Lorem Lorem consectetur consectetur",
+    "stock": 95,
+    "precio": "87.24",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FZZPW5UK",
+    "nombre": "Reloj III",
+    "descripcion": "adipiscing elit elit amet sit consectetur adipiscing adipiscing",
+    "stock": 88,
+    "precio": "35.90",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "3GIIVAHC",
+    "nombre": "Bolso NNN",
+    "descripcion": "sit amet ipsum Lorem ipsum sit adipiscing consectetur amet dolor",
+    "stock": 37,
+    "precio": "81.26",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "TPHR9813",
+    "nombre": "Gafas XXX",
+    "descripcion": "sit adipiscing Lorem consectetur sit",
+    "stock": 84,
+    "precio": "28.74",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "IJ9CBTVE",
+    "nombre": "Pantalón YYY",
+    "descripcion": "ipsum adipiscing dolor adipiscing elit ipsum Lorem Lorem",
+    "stock": 100,
+    "precio": "85.05",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "E5SRYD6D",
+    "nombre": "Sombrero CCC",
+    "descripcion": "ipsum ipsum ipsum sit dolor amet adipiscing adipiscing dolor",
+    "stock": 69,
+    "precio": "65.12",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "UXY23Q2U",
+    "nombre": "Camiseta PPP",
+    "descripcion": "amet consectetur amet amet elit",
+    "stock": 48,
+    "precio": "21.90",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1M9LD8KO",
+    "nombre": "Zapatos HHH",
+    "descripcion": "ipsum ipsum elit Lorem amet dolor ipsum ipsum elit",
+    "stock": 69,
+    "precio": "32.98",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "NI9V8LSU",
+    "nombre": "Camiseta AAA",
+    "descripcion": "sit Lorem adipiscing ipsum ipsum sit",
+    "stock": 82,
+    "precio": "67.68",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "NBDKKMZG",
+    "nombre": "Reloj WWW",
+    "descripcion": "ipsum Lorem amet elit consectetur adipiscing ipsum adipiscing sit ipsum",
+    "stock": 41,
+    "precio": "32.00",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "J4817JVR",
+    "nombre": "Sombrero YYY",
+    "descripcion": "amet amet adipiscing sit adipiscing amet elit sit consectetur",
+    "stock": 19,
+    "precio": "31.36",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "EK1YYH89",
+    "nombre": "Zapatos PPP",
+    "descripcion": "ipsum ipsum elit consectetur sit Lorem ipsum elit adipiscing sit",
+    "stock": 95,
+    "precio": "1.61",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "Y18HG0VT",
+    "nombre": "Gafas QQQ",
+    "descripcion": "sit elit elit ipsum dolor adipiscing elit",
+    "stock": 70,
+    "precio": "37.86",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6V9MO7OE",
+    "nombre": "Gafas QQQ",
+    "descripcion": "ipsum elit elit Lorem consectetur amet consectetur sit elit",
+    "stock": 47,
+    "precio": "34.26",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "1WSSREFZ",
+    "nombre": "Bolso CCC",
+    "descripcion": "dolor Lorem sit sit amet",
+    "stock": 34,
+    "precio": "20.44",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "TXBLC10F",
+    "nombre": "Zapatos EEE",
+    "descripcion": "sit elit Lorem elit ipsum dolor adipiscing sit",
+    "stock": 84,
+    "precio": "40.33",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QQMSC4HB",
+    "nombre": "Zapatos III",
+    "descripcion": "dolor dolor elit consectetur Lorem sit",
+    "stock": 68,
+    "precio": "49.16",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "DMMS8TME",
+    "nombre": "Bolso AAA",
+    "descripcion": "Lorem amet consectetur sit Lorem consectetur ipsum ipsum dolor",
+    "stock": 85,
+    "precio": "71.44",
+    "imagen": "https://ejemplo.com/imagen6.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "C58RJTC5",
+    "nombre": "Zapatos VVV",
+    "descripcion": "elit sit consectetur Lorem sit",
+    "stock": 59,
+    "precio": "45.94",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "D0EN7QZB",
+    "nombre": "Reloj ZZZ",
+    "descripcion": "adipiscing dolor Lorem amet adipiscing sit consectetur sit elit adipiscing",
+    "stock": 8,
+    "precio": "72.23",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "M277LOJ0",
+    "nombre": "Camiseta MMM",
+    "descripcion": "Lorem elit ipsum dolor Lorem dolor amet Lorem adipiscing adipiscing",
+    "stock": 81,
+    "precio": "36.88",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "7YIDXIRC",
+    "nombre": "Pantalón SSS",
+    "descripcion": "adipiscing Lorem ipsum ipsum Lorem elit adipiscing consectetur",
+    "stock": 87,
+    "precio": "11.09",
+    "imagen": "https://ejemplo.com/imagen4.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QLMD3XME",
+    "nombre": "Pantalón WWW",
+    "descripcion": "dolor amet Lorem ipsum adipiscing",
+    "stock": 46,
+    "precio": "37.23",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "YTJS1WD6",
+    "nombre": "Sombrero HHH",
+    "descripcion": "ipsum Lorem adipiscing ipsum amet amet dolor sit adipiscing",
+    "stock": 51,
+    "precio": "87.93",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "24WV2JF9",
+    "nombre": "Gafas BBB",
+    "descripcion": "elit amet amet consectetur sit Lorem consectetur",
+    "stock": 1,
+    "precio": "9.84",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "IMMUVEF7",
+    "nombre": "Reloj YYY",
+    "descripcion": "sit adipiscing sit consectetur elit ipsum adipiscing Lorem dolor",
+    "stock": 38,
+    "precio": "58.99",
+    "imagen": "https://ejemplo.com/imagen5.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "MNSGJO62",
+    "nombre": "Camiseta SSS",
+    "descripcion": "adipiscing consectetur adipiscing amet adipiscing",
+    "stock": 62,
+    "precio": "22.64",
+    "imagen": "https://ejemplo.com/imagen2.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QYUAWQY4",
+    "nombre": "Gafas PPP",
+    "descripcion": "ipsum consectetur dolor sit adipiscing consectetur Lorem elit adipiscing amet",
+    "stock": 62,
+    "precio": "51.27",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "OBQDTKOB",
+    "nombre": "Camiseta FFF",
+    "descripcion": "sit ipsum adipiscing sit dolor sit dolor amet",
+    "stock": 96,
+    "precio": "16.09",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "N25BYEC2",
+    "nombre": "Camiseta UUU",
+    "descripcion": "consectetur sit dolor sit dolor elit dolor elit dolor",
+    "stock": 60,
+    "precio": "74.08",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "6YEBY2WE",
+    "nombre": "Bolso NNN",
+    "descripcion": "sit Lorem consectetur amet Lorem consectetur adipiscing ipsum",
+    "stock": 13,
+    "precio": "97.40",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "Q5T33F5D",
+    "nombre": "Gafas RRR",
+    "descripcion": "Lorem elit Lorem sit Lorem amet",
+    "stock": 68,
+    "precio": "37.05",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "VF2HLK96",
+    "nombre": "Zapatos CCC",
+    "descripcion": "dolor elit amet dolor Lorem ipsum ipsum ipsum",
+    "stock": 99,
+    "precio": "32.90",
+    "imagen": "https://ejemplo.com/imagen10.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "DY4N7HF2",
+    "nombre": "Pantalón TTT",
+    "descripcion": "Lorem Lorem consectetur consectetur Lorem",
+    "stock": 60,
+    "precio": "48.18",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QB1QYH9S",
+    "nombre": "Reloj AAA",
+    "descripcion": "elit consectetur ipsum amet elit ipsum consectetur",
+    "stock": 88,
+    "precio": "73.38",
+    "imagen": "https://ejemplo.com/imagen7.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "F7JIGRXS",
+    "nombre": "Reloj LLL",
+    "descripcion": "Lorem elit amet amet dolor adipiscing ipsum amet ipsum",
+    "stock": 22,
+    "precio": "56.19",
+    "imagen": "https://ejemplo.com/imagen8.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "QJDM8390",
+    "nombre": "Sombrero HHH",
+    "descripcion": "ipsum elit consectetur sit sit elit consectetur amet sit",
+    "stock": 81,
+    "precio": "74.82",
+    "imagen": "https://ejemplo.com/imagen1.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "FH43O7HR",
+    "nombre": "Sombrero UUU",
+    "descripcion": "Lorem sit elit dolor ipsum consectetur sit",
+    "stock": 4,
+    "precio": "81.67",
+    "imagen": "https://ejemplo.com/imagen9.jpg",
+    "habilitado": true
+  },
+  {
+    "referencia": "D7M4S54J",
+    "nombre": "Sombrero XXX",
+    "descripcion": "consectetur adipiscing elit elit dolor adipiscing dolor",
+    "stock": 65,
+    "precio": "51.55",
+    "imagen": "https://ejemplo.com/imagen3.jpg",
+    "habilitado": true
+  }
+]
