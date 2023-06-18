@@ -1,7 +1,7 @@
 const cliente = require('../models/cliente');
 const vendedor = require('../models/vendedores');
 const products = require ('../models/productos');
-const grafico = require('../models/grafico');
+const graficos = require('../models/grafico');
 // const descargarExcel = require ('../models/productos');
 
 ///CLIENTES
@@ -72,8 +72,12 @@ exports.dbproductos = async(req,res) => {
 
 
 //GRAFICO
-exports.grafico = async(req, res) => {
-    res.render(grafico);
+exports.dbgrafico = async(req, res) => {
+    console.log(graficos);
+    let graphics = await graficos.find();
+    res.render('grafico', {
+        'grafiquito': graphics
+    });
 }
 
 // // exports.productos = (req, res)=>{ 
