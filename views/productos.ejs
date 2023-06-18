@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> <!-- navbar -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- navbar -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> <!-- navbar -->
-    
-    
+
+
     <title>Productos</title>
 </head>
 
@@ -187,7 +187,57 @@
         border: 0;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+    }
 
+
+    /* Offcanvas */
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-right: 50px;
+    }
+
+    #main {
+        transition: margin-right .5s;
+        padding: 16px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 14px;
+        }
     }
 </style>
 
@@ -202,6 +252,7 @@
 
                 <li><a href="#">Clientes</a></li>
                 <li><a href="#">Vendedores</a></li>
+                <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></li>
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -239,7 +290,8 @@
                                             <p class="ticket__current-price">
                                                 <%=product.Precio %>
                                             </p>
-                                            <button class="ticket__buy-btn">Carrito <i class='fas fa-shopping-cart'></i></button>
+                                            <button class="ticket__buy-btn">Carrito <i
+                                                    class='fas fa-shopping-cart'></i></button>
                             </div>
                         </div>
                     </div>
@@ -253,8 +305,27 @@
 
     </div>
 
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
 </main>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginRight = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginRight = "0";
+    }
+</script>
 
 <footer>
     <%- include('footer'); %>

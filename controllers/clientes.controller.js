@@ -62,9 +62,9 @@ exports.createVendedores = async(req,res) => {
 //PRODUCTOS
 //Listar
 exports.dbproductos = async(req,res) => {
-    console.log(products);
+    // console.log(products);
     let productoslista = await products.find();
-    console.log(productoslista);
+    // console.log(productoslista);
     res.render('productos', {
         'listaproductos': productoslista
     });
@@ -72,13 +72,13 @@ exports.dbproductos = async(req,res) => {
 
 
 //GRAFICO
-exports.dbgrafico = async(req, res) => {
-    console.log(graficos);
-    let graphics = await graficos.find();
-    res.render('grafico', {
-        'grafiquito': graphics
-    });
-}
+// exports.dbgrafico = async(req, res) => {
+//     console.log(graficos);
+//     let graphics = await graficos.find();
+//     res.render('grafico', {
+//         'grafiquito': graphics
+//     });
+// }
 
 // // exports.productos = (req, res)=>{ 
 // //     res.render('productos'); 
