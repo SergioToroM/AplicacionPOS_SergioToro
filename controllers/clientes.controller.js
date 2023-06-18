@@ -1,6 +1,7 @@
 const cliente = require('../models/cliente');
 const vendedor = require('../models/vendedores');
 const products = require ('../models/productos');
+const grafico = require('../models/grafico');
 // const descargarExcel = require ('../models/productos');
 
 ///CLIENTES
@@ -69,6 +70,11 @@ exports.dbproductos = async(req,res) => {
     });
 }
 
+
+//GRAFICO
+exports.grafico = async(req, res) => {
+    res.render(grafico);
+}
 
 // // exports.productos = (req, res)=>{ 
 // //     res.render('productos'); 
