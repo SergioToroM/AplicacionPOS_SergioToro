@@ -191,54 +191,166 @@
 
 
     /* Offcanvas */
-    .sidenav {
-        height: 100%;
-        width: 0;
+    /* -- main content -- */
+    .content-container {
+        position: relative;
+        z-index: 0;
+        padding: 20px;
+        max-width: 700px;
+        margin: 0 auto;
+        overflow: hidden;
+        transition: all 300ms ease-in-out;
+    }
+
+    .site-title {
+        text-align: center;
+        border-bottom: 1px solid #111111;
+        margin-bottom: 24px;
+    }
+
+    .site-title h1 {
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .content p {
+        line-height: 1.6em;
+        margin-bottom: 24px;
+    }
+
+    /* -- Slideout Sidebar -- */
+
+    .slideout-sidebar {
         position: fixed;
-        z-index: 1;
         top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+        left: -190px;
+        z-index: 0;
+        width: 150px;
+        height: 100%;
+        padding: 20px;
+        background-color: #212121;
+        transition: all 300ms ease-in-out;
     }
 
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
+    .slideout-sidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .sidenav a:hover {
-        color: #f1f1f1;
+    .slideout-sidebar ul li {
+        cursor: pointer;
+        padding: 18px 0;
+        border-bottom: 1px solid rgba(244, 244, 244, 0.4);
+        color: rgba(244, 244, 244, 0.7);
     }
 
-    .sidenav .closebtn {
+    .slideout-sidebar ul li:last-child {
+        border-bottom: 0;
+    }
+
+    .slideout-sidebar ul li:hover {
+        color: rgba(244, 244, 244, 1);
+    }
+
+    /* -- Menu Icon -- */
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
         position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-right: 50px;
+        top: 18px;
+        left: 30px;
+        font-size: 24px;
+        z-index: 1;
+        transition: all 300ms ease-in-out;
     }
 
-    #main {
-        transition: margin-right .5s;
-        padding: 16px;
+
+
+    /*-- The Magic --*/
+    #menu-toggle:checked~.slideout-sidebar {
+        left: 0px;
     }
 
-    @media screen and (max-height: 450px) {
-        .sidenav {
-            padding-top: 15px;
+    #menu-toggle:checked+.menu-icon {
+        left: 210px;
+    }
+
+    #menu-toggle:checked~.content-container {
+        padding-left: 190px;
+    }
+
+    /* -- Media Queries -- */
+    @media (max-width: 991px) {
+
+        .content-container {
+            max-width: 480px;
         }
 
-        .sidenav a {
-            font-size: 14px;
-        }
     }
+
+    @media (max-width: 767px) {
+
+        .content-container {
+            max-width: 100%;
+            margin: 30px auto 0;
+        }
+
+        #menu-toggle:checked~.content-container {
+            padding-left: 0;
+        }
+
+        .slideout-sidebar ul {
+            text-align: center;
+            max-width: 200px;
+            margin: 30px auto 0;
+        }
+
+        .menu-icon {
+            left: 20px
+        }
+
+        #menu-toggle:checked~.slideout-sidebar {
+            width: 100%;
+        }
+
+        #menu-toggle:checked+.menu-icon {
+            left: 87%;
+            color: #fafafa;
+        }
+
+        @media screen and (max-width: 736px) and (orientation: landscape) {
+
+            .slideout-sidebar {
+                padding: 0;
+            }
+
+            .slideout-sidebar ul {
+                max-width: 100%;
+                margin: 60px auto 0;
+            }
+
+            .slideout-sidebar ul li {
+                display: inline-block;
+                border-bottom: 0;
+                width: 72px;
+                padding: 18px 24px;
+                margin: 0 6px 12px;
+                color: #ffffff;
+                background-color: #777;
+            }
+
+        }
+
+    }
+    
 </style>
 
 <header>
@@ -252,7 +364,12 @@
 
                 <li><a href="#">Clientes</a></li>
                 <li><a href="#">Vendedores</a></li>
-                <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span></li>
+                <section class="top-banner">
+                    <div class="top-banner-overlay">
+                        <!-- content here -->
+                    </div>
+                </section>
+
 
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -267,6 +384,18 @@
         <%- include('header'); %>
 
 </header>
+
+
+<div class="slideout-sidebar">
+    <ul>
+        <li>Home</li>
+        <li>Catalog</li>
+        <li>About Us</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
 
 <main>
     <div class="form-group">
@@ -305,31 +434,20 @@
 
     </div>
 
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
+
 
 </main>
 
 <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-        document.getElementById("main").style.marginRight = "250px";
-    }
 
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginRight = "0";
-    }
 </script>
 
 <footer>
     <%- include('footer'); %>
 </footer>
 </body>
+
+
+<!-- https://codepen.io/james_zedd/pen/ZKVZWp -->
 
 </html>

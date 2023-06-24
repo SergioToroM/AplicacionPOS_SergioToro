@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
-        
+
     <title>Inicio sesión y registro</title>
 
     <style>
@@ -17,9 +17,8 @@
             font-weight: normal;
             font-size: 100%;
             color: #1b262c;
-
             margin: 0;
-            
+
         }
 
         #contenedor {
@@ -42,7 +41,8 @@
 
         .titulo {
             font-size: 250%;
-            color: #bbe1fa;
+            /* color: #bbe1fa; */
+            color: white;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -50,7 +50,14 @@
         #login {
             width: 100%;
             padding: 50px 30px;
-            background-color: #3282b8;
+            /* background-color: #3282b8; */
+            background: #0575E6;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #021B79, #0575E6);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #021B79, #0575E6);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
             -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
             -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
@@ -119,7 +126,7 @@
         .pie-form a {
             display: block;
             text-decoration: none;
-            color: #bbe1fa;
+            color: white;
             margin-bottom: 3px;
         }
 
@@ -157,9 +164,9 @@
                 </div>
                 <form id="loginform">
                     <input type="text" name="usuario" placeholder="Usuario" required>
-                    
+
                     <input type="password" placeholder="Contraseña" name="password" required>
-                    
+
                     <button type="submit" title="Ingresar" name="Ingresar">Login</button>
                 </form>
                 <div class="pie-form">
@@ -174,7 +181,7 @@
     </div>
 
 
-    
+
 
 </body>
 
