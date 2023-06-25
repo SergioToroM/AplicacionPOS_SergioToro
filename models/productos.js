@@ -1,10 +1,10 @@
 const mongoose = require('../config/Database');
 
 const ProductsSchema = new mongoose.Schema({
-    Referencia: {type: String, required: true},
-    Nombre: {type: String, required: true},
-    Descripcion: {type: String},
-    Precio: {type: Number},
+    referencia: {type: String, required: true},
+    nombre: {type: String, required: true},
+    descripcion: {type: String},
+    precio: {type: Number},
     Stock: {type: Number}
 
 });
