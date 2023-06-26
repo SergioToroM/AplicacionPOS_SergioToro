@@ -49,17 +49,17 @@
     }
 
     .carousel-inner img {
-        /*width: 50%;
-        height: 20%;*/
-        /*display: flex;*/
+        height: 350px;
+        /* display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: center; */
     }
 
     /* Offcanvas */
 </style>
 
 <header>
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">FreakStore</a>
@@ -94,11 +94,6 @@
         </div>
     </nav>
 
-
-</header>
-
-<body>
-
     <div class="offcanvas offcanvas-end" id="demo">
         <div class="offcanvas-header">
             <h1 class="offcanvas-title">Carrito</h1>
@@ -112,45 +107,47 @@
         </div>
     </div>
 
+</header>
 
-    <%- include('header'); %>
+<body>
 
-        <!-- Carousel -->
-        <div class="text-center bg-light">
-            <div id="demo" class="carousel slide" data-bs-ride="carousel" style="background-color: white">
-                <!-- Indicators/dots -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                </div>
 
-                <!-- The slideshow/carousel -->
-                <div class="carousel-inner row">
-                    <div class="carousel-item active col-sm">
-                        <img class="card-img-top" url="https://www.lavanguardia.com/files/og_thumbnail/uploads/2022/01/17/61e57183d0081.jpeg" alt="Los Angeles"
-                            class="d-block" style="width:100%">
-                    </div>
-                    <div class="carousel-item col-sm">
-                        <img class="card-img-top" url="https://cdn.resfu.com/media/img_news/leo-messi--en-un-comercial-de-adidas.jpg?size=1000x&lossy=1" alt="Chicago"
-                            class="d-block" style="width:100%">
-                    </div>
-                    <div class="carousel-item col-sm">
-                        <img class="card-img-top" url="https://www.mundiario.com/asset/thumbnail,1280,720,center,center/media/mundiario/images/2015/11/19/2015111911232476228.jpg" alt="New York"
-                            class="d-block" style="width:100%">
-                    </div>
-                </div>
+    <!-- Carousel -->
 
-                <!-- Left and right controls/icons -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.tradesport.com/revcms_render_image.aspx?date=20130821&id=e2096336-8877-4484-8e78-42423cf90c4b&mode=0" class="d-block w-100" alt="nike">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.resfu.com/media/img_news/leo-messi--en-un-comercial-de-adidas.jpg?size=1000x&lossy=1" class="d-block w-100" alt="adidas">
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.mundiario.com/asset/thumbnail,1280,720,center,center/media/mundiario/images/2015/11/19/2015111911232476228.jpg" class="d-block w-100" alt="reebok">
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
+
+    <%- include('header'); %>
         <main>
 
             <br>

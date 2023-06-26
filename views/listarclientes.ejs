@@ -88,7 +88,7 @@
             <table id="customers">
                     <thead>
                     <tr>
-                        
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Teléfono</th>
                         <th>Ubicación</th>
@@ -101,6 +101,7 @@
                     
                         <% listaclientes.forEach(function(clients) { %>
                     <tr>
+                        <td><%=clients.Id %></td>
                         <td><%=clients.Nombre %></td>
                         <td><%=clients.Telefono %></td>
                         <td><%=clients.Ubicacion.Zoom %></td>
