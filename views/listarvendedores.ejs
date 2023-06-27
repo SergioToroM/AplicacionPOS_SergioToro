@@ -88,7 +88,7 @@
             <table id="customers">
                     <thead>
                     <tr>
-                        
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Documento</th>
                         <th>Ventas despachadas</th>
@@ -99,6 +99,7 @@
                     
                         <% listavendedores.forEach(function(sellers) { %>
                     <tr>
+                        <td><%=sellers.id %></td>
                         <td><%=sellers.Nombre %></td>
                         <td><%=sellers.Documento %></td>
                         <td><%=sellers.VentasDespachadas %></td>
