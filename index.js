@@ -14,10 +14,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use('/api',mirouter);
 
-const PORT = 4900;
+const PORT = 4090;
 
 app.get('/', (req,res) =>{res.render('../views/productos',)});
 
-app.listen( process.env.PORT || 4900,()=>{
+app.listen( process.env.PORT || 4090,()=>{
     console.log('En línea, puerto', PORT );
 });
