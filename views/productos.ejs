@@ -141,11 +141,10 @@
             <h1 class="offcanvas-title">Carrito</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvas-body" id="micarro">
+        <div class="offcanvas-body" data-target="#vercarro" onclick="pintarCarrito()" id="bodycarrito">
             
-                <p>Articulo 1</p>
-                <p>Articulo 2</p>
             
+
             <button class="btn btn-secondary" type="button">Comprar</button>
         </div>
     </div>
@@ -282,10 +281,8 @@
             let shopcart = JSON.parse(localStorage.getItem("carritocompras")) || [];
             let body = document.getElementById("bodycarrito")
 
-                function cart(id, imagen, nombre, precio){
+                function cart(nombre, precio){
                     shopcart.push({
-                        id: id,
-                        imagen: imagen,
                         nombre: nombre,
                         precio: precio
                     });
@@ -298,13 +295,13 @@
                 function pintarCarrito(){
                     body.innerHTML="";
 
-                    shopcart.forEach(producto =>{
+                    shopcart.forEach(product =>{
                         let cart = document.createElement('div')
-                        cart.classList.add('d-flex','justify-content-between');
+                        cart.classList.add('d-flex','justify-content-between','align-items-center');
                         cart.innerHTML =
-                        `<img src="${producto.imagen}">
-                        <h3>${producto.nombre}</h3>
-                        <p>${producto.precio}</p>`;
+                        // `<img src="${producto.imagen}">
+                        `<p>${product.nombre}</p>
+                        <p>${product.precio}</p>`;
 
                         body.append(cart);
 
