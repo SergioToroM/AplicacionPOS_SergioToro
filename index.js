@@ -2,7 +2,7 @@ const express = require('express');
 const logger = require('morgan');
 const app = express();
 const path = require('path');
-const cors = require('cors');
+
 
 const mirouter = require('./routes/enrutamiento')
 const env = require('dotenv');
@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/api',mirouter);
 
 
-app.use(cors({origin:'http://localhost:4090/api/productos'}));
+
 
 const PORT = 4090;
 
