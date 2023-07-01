@@ -16,8 +16,6 @@ app.use(express.json());
 app.use('/api',mirouter);
 
 
-
-
 const PORT = 4090;
 
 app.get('/', (req,res) =>{res.render('../views/productos',)});

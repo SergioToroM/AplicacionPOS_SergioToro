@@ -62,11 +62,11 @@
 
     .wrapper {
         height: 40px;
-        width: 150px;
+        min-width: 150px; 
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #e2e2e2;
+        background: rgb(247, 244, 244);
         border-radius: 10px;
         
     }
@@ -139,7 +139,6 @@
         </div>
         <div class="offcanvas-body" data-target="#vercarro" onclick="pintarCarrito()" id="bodycarrito">
 
-          
         
         </div>
         <!-- <button class="btn btn-secondary" type="button">Comprar</button> -->
@@ -196,8 +195,8 @@
                 <% listaproductos.forEach(function(product) { %>
 
                     <div class="container-card">
-                        <div class="card" style="width:300px; height:600px">
-                            <img class="card-img-top" src="https://source.unsplash.com/featured/300x201"
+                        <div class="card" style="width:300px; height:500px">
+                            <img class="card-img-top" src="https://source.unsplash.com/800x600/?<%=product.nombre %>"
                                 alt="Card image" style="width:100%">
                             <div class="card-body">
                                 <h4 class="card-title">
@@ -205,9 +204,6 @@
                                 </h4>
                                 <p class="card-text">
                                     <%=product.nombre %>
-                                </p>
-                                <p class="card-text">
-                                    <%=product.descripcion %>
                                 </p>
                                 <h5 class="card-text">
                                     <%=product.precio %>
@@ -217,7 +213,7 @@
                                     <button type="button" style="border-radius:10px; border: 1px solid white; font-size: 30px;" onclick="cart(`<%=product.nombre %>`, `<%=product.precio %>`)">
                                       <i class="bi bi-cart4"></i>
 
-                                    </button>
+                                    </button><br><br>
                                     <div class="wrapper align-items-center">
                                       <span class="minus"><i class="bi bi-dash-lg"></i></span>
                                       <span class="num">01</span>
@@ -289,15 +285,23 @@
                         let cart = document.createElement('div')
                         cart.classList.add('d-flex','justify-content-between','align-items-center');
                         cart.innerHTML =
-                        `<img src="https://source.unsplash.com/featured/300x201" style="height: 35px;">
+                        `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
                         <p>${product.nombre}</p>,
                         <p>${product.precio}</p>`;
 
                         body.append(cart);
 
+                        
+                        
+                      });
 
-                    });
-                }
+                      let eliminarprod = document.createElement('span');
+                      eliminarprod.innerText = "X";
+                      eliminarprod.classList = "delete-producto";
+                      cart.append(eliminarprod);
+  
+                      eliminarprodados.addEventListener("click",pintarCarrito);
+                    }
 
         </script>
 
