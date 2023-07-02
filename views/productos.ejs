@@ -210,7 +210,7 @@
                                 </h5>
 
                                 
-                                    <button type="button" style="border-radius:10px; border: 1px solid white; font-size: 30px;" onclick="cart(`<%=product.nombre %>`, `<%=product.precio %>`)">
+                                    <button type="button" style="border-radius:10px; border: 1px solid white; font-size: 30px;" onclick="carrito(`<%=product.nombre %>`, `<%=product.precio %>`)">
                                       <i class="bi bi-cart4"></i>
 
                                     </button><br><br>
@@ -238,8 +238,10 @@
 
 
         </main>
-
+        
         <script>
+            let shopcart = JSON.parse(localStorage.getItem("carritocompras")) || [];
+            
             // Incrementar crementar cantidades
             const plus = document.querySelector(".plus"),
             minus = document.querySelector(".minus"),
@@ -264,10 +266,9 @@
 
 
             
-            let shopcart = JSON.parse(localStorage.getItem("carritocompras")) || [];
             let body = document.getElementById("bodycarrito")
 
-                function cart(nombre, precio){
+                function carrito(nombre, precio){
                     shopcart.push({
                         nombre: nombre,
                         precio: precio
@@ -282,14 +283,13 @@
                     body.innerHTML="";
 
                     shopcart.forEach(product =>{
-                        let cart = document.createElement('div')
-                        cart.classList.add('d-flex','justify-content-between','align-items-center');
-                        cart.innerHTML =
+                        let carrito = document.createElement('div')
+                        carrito.classList.add('d-flex','justify-content-between','align-items-center');
+                        carrito.innerHTML =
                         `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
-                        <p>${product.nombre}</p>,
+                        <p>${product.nombre}</p>
                         <p>${product.precio}</p>`;
-
-                        body.append(cart);
+                        body.append(carrito);
 
                         
                         
@@ -297,11 +297,24 @@
 
                       let eliminarprod = document.createElement('span');
                       eliminarprod.innerText = "X";
-                      eliminarprod.classList = "delete-producto";
-                      cart.append(eliminarprod);
+                      eliminarprod.className = "delete-producto";
+                      carrito.append(eliminarprod);
   
-                      eliminarprodados.addEventListener("click",pintarCarrito);
-                    }
+                      eliminarprod.addEventListener("click",eliminarProducto);
+                    };
+                
+                    const eliminar  = () => {
+                        const foundId = shopcart.find((elemento) => elemento.id);
+                            console.log(foundId);
+
+                        shopcart = shopcart.filter((carritoId) => {
+                            return carritoId !== foundId;
+
+                    });
+                    
+                    pintarCarrito();
+                    cookies();
+                };
 
         </script>
 
