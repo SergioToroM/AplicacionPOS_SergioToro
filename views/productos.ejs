@@ -44,7 +44,9 @@
         border-radius: 15px;
         padding: 8px;
         text-align: center;
-        margin-bottom: 10px;
+        margin: 8px;
+        background-color: white;
+        box-shadow: 3px 3px 10px;
 
     }
 
@@ -96,7 +98,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">FreakStore</a>
+            <a class="navbar-brand fs-1" href="#">FreakStore</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -122,7 +124,7 @@
                 </ul>
                 <ul>
                     <div class="carritoecompras">
-                      <button class="btn btn-primary" style="font-size: 25px; background: black;" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-cart4"></i>
+                      <button class="btn btn-primary" style="font-size: 25px; background: black;" type="button" onclick="pintarCarrito()" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-cart4"></i>
                             
                         </button>
                     </div>
@@ -137,7 +139,7 @@
             <h1 class="offcanvas-title">Carrito</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
-        <div class="offcanvas-body" data-target="#vercarro" onclick="pintarCarrito()" id="bodycarrito">
+        <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
 
         
         </div>
@@ -215,10 +217,10 @@
 
                                     </button><br><br>
                                     <div class="wrapper align-items-center">
-                                      <span class="minus"><i class="bi bi-dash-lg"></i></span>
-                                      <span class="num">01</span>
-                                      <span class="plus"><i class="bi bi-plus-lg"></i></span>
-                                    </div>
+                                        <span class="minus"><i class="bi bi-dash-lg"></i></span>
+                                        <span class="num">01</span>
+                                        <span class="plus"><i class="bi bi-plus-lg"></i></span>
+                                      </div>
                                     
                               </div>
                         </div>
@@ -240,8 +242,8 @@
         </main>
         
         <script>
-            let shopcart = JSON.parse(localStorage.getItem("carritocompras")) || [];
             
+
             // Incrementar crementar cantidades
             const plus = document.querySelector(".plus"),
             minus = document.querySelector(".minus"),
@@ -265,24 +267,24 @@
             });
 
 
-            
+            let carritocomp = JSON.parse(localStorage.getItem("carritocompras")) || [];
             let body = document.getElementById("bodycarrito")
 
                 function carrito(nombre, precio){
-                    shopcart.push({
+                    carritocomp.push({
                         nombre: nombre,
                         precio: precio
                     });
-                    console.log(shopcart);
-                    localStorage.setItem("carritocompras", JSON.stringify(shopcart));
-
+                    console.log(carritocomp);
+                    localStorage.setItem("carritocompras", JSON.stringify(carritocomp));
+                    carritocomp
                     pintarCarrito();
                 }
 
                 function pintarCarrito(){
                     body.innerHTML="";
 
-                    shopcart.forEach(product =>{
+                    carritocomp.forEach(product =>{
                         let carrito = document.createElement('div')
                         carrito.classList.add('d-flex','justify-content-between','align-items-center');
                         carrito.innerHTML =
@@ -304,10 +306,10 @@
                     };
                 
                     const eliminar  = () => {
-                        const foundId = shopcart.find((elemento) => elemento.id);
+                        const foundId = carritocomp.find((elemento) => elemento.id);
                             console.log(foundId);
 
-                        shopcart = shopcart.filter((carritoId) => {
+                            carritocomp = carritocomp.filter((carritoId) => {
                             return carritoId !== foundId;
 
                     });
