@@ -64,13 +64,13 @@
 
     .wrapper {
         height: 40px;
-        min-width: 150px; 
+        min-width: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
         background: rgb(247, 244, 244);
         border-radius: 10px;
-        
+
     }
 
     .wrapper span {
@@ -84,12 +84,14 @@
 
     .wrapper span.num {
         font-size: 20;
-        border-right: 2px solid rgb(165,165,165);
+        border-right: 2px solid rgb(165, 165, 165);
         border-left: 2px solid rgb(165, 165, 165);
         pointer-events: none;
-
     }
 
+    .delete-producto {
+        cursor: pointer;
+    }
 
 </style>
 
@@ -102,7 +104,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between"  id="collapsibleNavbar">
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Clientes</a>
@@ -124,8 +126,10 @@
                 </ul>
                 <ul>
                     <div class="carritoecompras">
-                        <button class="btn btn-primary" style="font-size: 25px; background: black;" type="button" onclick="pintarCarrito()" data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-cart4"></i>
-                            
+                        <button class="btn btn-primary" style="font-size: 25px; background: black;" type="button"
+                            onclick="pintarCarrito()" data-bs-toggle="offcanvas" data-bs-target="#demo"><i
+                                class="bi bi-cart4"></i>
+
                         </button>
                     </div>
                 </ul>
@@ -140,8 +144,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
-            
-        
+
+
         </div>
         <!-- <button class="btn btn-secondary" type="button">Comprar</button> -->
     </div>
@@ -211,19 +215,21 @@
                                     <%=product.precio %>
                                 </h5>
 
-                                
-                                    <button type="button" style="border-radius:10px; border: 1px solid white; font-size: 30px;" onclick="carrito(`<%=product.nombre %>`, `<%=product.precio %>`)">
-                                      <i class="bi bi-cart4"></i>
 
-                                    </button><br><br>
-                                    <!-- contador -->
-                                    <div class="wrapper align-items-center">
-                                        <span class="minus"><i class="bi bi-dash-lg"></i></span>
-                                        <span class="num">01</span>
-                                        <span class="plus"><i class="bi bi-plus-lg"></i></span>
-                                      </div>
-                                    
-                              </div>
+                                <button type="button"
+                                    style="border-radius:10px; border: 1px solid white; font-size: 30px;"
+                                    onclick="carrito(`<%=product.id %>`,`<%=product.nombre %>`, `<%=product.precio %>`)">
+                                    <i class="bi bi-cart4"></i>
+
+                                </button><br><br>
+                                <!-- contador -->
+                                <div class="wrapper align-items-center">
+                                    <span class="minus"><i class="bi bi-dash-lg"></i></span>
+                                    <span class="num">01</span>
+                                    <span class="plus"><i class="bi bi-plus-lg"></i></span>
+                                </div>
+
+                            </div>
                         </div>
 
                     </div>
@@ -241,25 +247,25 @@
 
 
         </main>
-        
+
         <script>
-            
+
 
             // Incrementar crementar cantidades
             const plus = document.querySelector(".plus"),
-            minus = document.querySelector(".minus"),
-            num = document.querySelector(".num");
+                minus = document.querySelector(".minus"),
+                num = document.querySelector(".num");
 
             let a = 1;
 
-            plus.addEventListener("click", ()=>{
+            plus.addEventListener("click", () => {
                 a++;
                 a = (a < 10) ? "0" + a : a;
                 num.innerText = a;
                 consol.log("a")
             });
 
-            minus.addEventListener("click", ()=>{
+            minus.addEventListener("click", () => {
                 if (a > 1) {
                     a--;
                     a = (a < 10) ? "0" + a : a;
@@ -271,58 +277,62 @@
             let carritocomp = JSON.parse(localStorage.getItem("carritocompras")) || [];
             let body = document.getElementById("bodycarrito")
 
-                function carrito(nombre, precio) {
-                    carritocomp.push({
-                        nombre: nombre,
-                        precio: precio
-                    });
-                    console.log(carritocomp);
-                    localStorage.setItem("carritocompras", JSON.stringify(carritocomp));
-                    carritocomp
-                    pintarCarrito();
-                }
+            function carrito(id, nombre, precio) {
+                carritocomp.push({
+                    id: id,
+                    nombre: nombre,
+                    precio: precio
+                });
+                console.log(carritocomp);
+                // localStorage.setItem("carritocompras", JSON.stringify(carritocomp));
+                // carritocomp
+                cookies();
+                pintarCarrito();
+            }
 
-                function pintarCarrito(){
-                    body.innerHTML="";
+            function cookies() {
+                localStorage = JSON.parse(localStorage.getItem("carritocompras"))
 
-                    carritocomp.forEach(product =>{
-                        let carrito = document.createElement('div')
-                        carrito.classList.add('d-flex','justify-content-between','align-items-center');
-                        carrito.innerHTML =
+            };
+
+            function pintarCarrito() {
+                body.innerHTML = "";
+
+                carritocomp.forEach(product => {
+                    let carrito = document.createElement('div')
+                    carrito.classList.add('d-flex', 'justify-content-between', 'align-items-center');
+                    carrito.innerHTML =
                         `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
                         <p>${product.nombre}</p>
                         <p>${product.precio}</p>`;
-                        body.append(carrito);
+                    body.append(carrito);
 
-                        
-                        
-                      });
+                    let eliminarprod = document.createElement('span');
+                    eliminarprod.innerText = "👎";
+                    eliminarprod.className = "delete-producto";
+                    carrito.append(eliminarprod);
 
-                      let eliminarprod = document.createElement('span');
-                      eliminarprod.innerText = "X";
-                      eliminarprod.className = "delete-producto";
-                      carrito.append(eliminarprod);
-  
-                      eliminarprod.addEventListener("click",eliminarProducto);
-                    };
+                    eliminarprod.addEventListener("click", eliminar);
+
+                });
+
+
+            };
+
+            const eliminar = () => {
+                const foundId = carritocomp.find((product) => product.id);
+                console.log(foundId);
+
+                carritocomp = carritocomp.filter((carritoId) => {
+                    return carritoId !== foundId;
+
+                });
+                cookies();
+                pintarCarrito();
                 
-                    const eliminar  = () => {
-                        const foundId = carritocomp.find((elemento) => elemento.id);
-                            console.log(foundId);
+            };
 
-                            carritocomp = carritocomp.filter((carritoId) => {
-                            return carritoId !== foundId;
-
-                    });
-                    savelocal();
-                    pintarCarrito();
-                    cookies();
-                };
-
-                function savelocal () {
-                    localStorage = JSON.parse(localStorage.getItem("carritocompras"))
-                
-                }
+            
 
         </script>
 
@@ -331,4 +341,5 @@
         </footer>
 </body>
 <!-- https://picsum.photos/id/0/600 -->
+
 </html>
