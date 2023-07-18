@@ -201,7 +201,7 @@
                 <% listaproductos.forEach(function(product) { %>
 
                     <div class="container-card">
-                        <div class="card" style="width:300px; height:500px">
+                        <div class="card" style="width:300px; height:430px">
                             <img class="card-img-top" src="https://source.unsplash.com/800x600/?<%=product.nombre %>"
                                 alt="Card image" style="width:100%">
                             <div class="card-body">
@@ -223,11 +223,11 @@
 
                                 </button><br><br>
                                 <!-- contador -->
-                                <div class="wrapper align-items-center">
+                                <!-- <div class="wrapper align-items-center">
                                     <span class="minus"><i class="bi bi-dash-lg"></i></span>
                                     <span class="num">01</span>
                                     <span class="plus"><i class="bi bi-plus-lg"></i></span>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
@@ -252,26 +252,26 @@
 
 
             // Incrementar crementar cantidades
-            const plus = document.querySelector(".plus"),
-                minus = document.querySelector(".minus"),
-                num = document.querySelector(".num");
+            // const plus = document.querySelector(".plus"),
+            //     minus = document.querySelector(".minus"),
+            //     num = document.querySelector(".num");
 
-            let a = 1;
+            // let a = 1;
 
-            plus.addEventListener("click", () => {
-                a++;
-                a = (a < 10) ? "0" + a : a;
-                num.innerText = a;
-                consol.log("a")
-            });
+            // plus.addEventListener("click", () => {
+            //     a++;
+            //     a = (a < 10) ? "0" + a : a;
+            //     num.innerText = a;
+            //     consol.log("a")
+            // });
 
-            minus.addEventListener("click", () => {
-                if (a > 1) {
-                    a--;
-                    a = (a < 10) ? "0" + a : a;
-                    num.innerText = a;
-                }
-            });
+            // minus.addEventListener("click", () => {
+            //     if (a > 1) {
+            //         a--;
+            //         a = (a < 10) ? "0" + a : a;
+            //         num.innerText = a;
+            //     }
+            // });
 
 
             let carritocomp = JSON.parse(localStorage.getItem("carritocompras")) || [];
