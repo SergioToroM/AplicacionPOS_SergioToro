@@ -268,15 +268,15 @@
 
                 carritocomp.forEach(product => {
                     let carrito = document.createElement('div')
-                    carrito.classList.add('d-flex', 'flex-row', 'justify-content-between', 'align-items-center');
+                    carrito.classList.add('d-flex', 'flex-wrap', 'align-content-around','justify-content-between', 'align-items-center');
                     carrito.innerHTML =
                         `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
                         <p>${product.nombre}</p>
-                        <p>${product.precio}</p>
+                        <p>$ ${product.precio}</p>
                         <button type= button class="button" onclick="sumar('${product.id}')"><i class="bi bi-plus-circle"></i></button>
                         <p style="text-align: center;">Cantidad: ${product.cantidad}</p>
                         <button type= button class="button" onclick="restar('${product.id}')"><i class="bi bi-dash-circle"></i></button>
-                        <p>Total: ${product.cantidad * product.precio}</p>`;
+                        <p>Total: $ ${product.cantidad * product.precio}</p>`;
                     body.append(carrito);
 
                     let eliminarprod = document.createElement('span');
