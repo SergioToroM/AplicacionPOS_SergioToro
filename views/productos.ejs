@@ -157,10 +157,10 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
-
+            
 
         </div>
-        <!-- <button class="btn btn-secondary" type="button">Comprar</button> -->
+        
     </div>
     <br><br>
 </header>
@@ -235,12 +235,7 @@
                                     <i class="bi bi-cart4"></i>
 
                                 </button><br><br>
-                                <!-- contador -->
-                                <!-- <div class="wrapper align-items-center">
-                                    <span class="minus"><i class="bi bi-dash-lg"></i></span>
-                                    <span class="num">01</span>
-                                    <span class="plus"><i class="bi bi-plus-lg"></i></span>
-                                </div> -->
+                                
 
                             </div>
                         </div>
@@ -291,14 +286,22 @@
             let body = document.getElementById("bodycarrito")
 
             function carrito(id, nombre, precio) {
+                const repeat = carritocomp.some((repeatid) => repeatid.id == id);
+
+                if(repeat){
+                    carritocomp.map((produ) => {
+                        if(produ.id == id) {
+                            produ.cantidad++;
+                        }
+                    })
+                }
                 carritocomp.push({
                     id: id,
                     nombre: nombre,
-                    precio: precio
+                    precio: precio,
+                    cantidad: 1
                 });
                 console.log(carritocomp);
-                // localStorage.setItem("carritocompras", JSON.stringify(carritocomp));
-                // carritocomp
                 cookies();
                 pintarCarrito();
             }
@@ -317,7 +320,11 @@
                     carrito.innerHTML =
                         `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
                         <p>${product.nombre}</p>
-                        <p>${product.precio}</p>`;
+                        <p>${product.precio}</p>
+                        <button type= button class="button" onclick="sumar('${product.id}')">+</button>
+                        <p>Cantidad: ${product.cantidad}</p>
+                        <button type= button class="button" onclick="restar('${product.id}')">-</button>
+                        <p>Total: ${product.cantidad * product.precio}</p>`;
                     body.append(carrito);
 
                     let eliminarprod = document.createElement('span');
@@ -328,6 +335,11 @@
                     eliminarprod.addEventListener("click", eliminar);
 
                 });
+                const total = carritocomp.reduce((acc,pro) => acc + parseFloat(pro.precio) * (pro.cantidad), 0)
+                    const totalproducts = document.createElement("div");
+                    totalproducts.className = "total-content";
+                    totalproducts.innerHTML = `Pago total: $ ${total}`;
+                    body.append(totalproducts);
             };
 
             const eliminar = () => {
@@ -340,8 +352,32 @@
                 });
                 cookies();
                 pintarCarrito();
-                
             };
+
+            function sumar(id){
+                carritocomp.map((produ) => {
+                    if(produ.id == id) {
+                        produ.cantidad++;
+                        cookies();
+                        pintarCarrito();
+                    }
+                });
+            }
+
+            function restar(id){
+                carritocomp.map((produ) => {
+                    if(produ.id == id) {
+                        produ.cantidad--;
+                        cookies();
+                        pintarCarrito()
+                        if(produ.id == 0){
+                            pintarCarrito();
+                            cookies();
+                            eliminar();
+                        }
+                    }
+                });
+            }
 
             
 
