@@ -62,33 +62,6 @@
     }
 
 
-    .wrapper {
-        height: 40px;
-        min-width: 150px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgb(247, 244, 244);
-        border-radius: 10px;
-
-    }
-
-    .wrapper span {
-        width: 50px;
-        text-align: center;
-        font-size: 20px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-
-    .wrapper span.num {
-        font-size: 20;
-        border-right: 2px solid rgb(165, 165, 165);
-        border-left: 2px solid rgb(165, 165, 165);
-        pointer-events: none;
-    }
-
     .delete-producto {
         cursor: pointer;
     }
@@ -106,6 +79,8 @@
         0 0 75px lime;
 
     }
+
+
 </style>
 
 <header>
@@ -157,7 +132,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
         <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
-            
+           
+            </div>
 
         </div>
         
@@ -258,30 +234,6 @@
 
         <script>
 
-
-            // Incrementar crementar cantidades
-            // const plus = document.querySelector(".plus"),
-            //     minus = document.querySelector(".minus"),
-            //     num = document.querySelector(".num");
-
-            // let a = 1;
-
-            // plus.addEventListener("click", () => {
-            //     a++;
-            //     a = (a < 10) ? "0" + a : a;
-            //     num.innerText = a;
-            //     consol.log("a")
-            // });
-
-            // minus.addEventListener("click", () => {
-            //     if (a > 1) {
-            //         a--;
-            //         a = (a < 10) ? "0" + a : a;
-            //         num.innerText = a;
-            //     }
-            // });
-
-
             let carritocomp = JSON.parse(localStorage.getItem("carritocompras")) || [];
             let body = document.getElementById("bodycarrito")
 
@@ -316,14 +268,14 @@
 
                 carritocomp.forEach(product => {
                     let carrito = document.createElement('div')
-                    carrito.classList.add('d-flex', 'justify-content-between', 'align-items-center');
+                    carrito.classList.add('d-flex', 'flex-row', 'justify-content-between', 'align-items-center');
                     carrito.innerHTML =
                         `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
                         <p>${product.nombre}</p>
                         <p>${product.precio}</p>
-                        <button type= button class="button" onclick="sumar('${product.id}')">+</button>
-                        <p>Cantidad: ${product.cantidad}</p>
-                        <button type= button class="button" onclick="restar('${product.id}')">-</button>
+                        <button type= button class="button" onclick="sumar('${product.id}')"><i class="bi bi-plus-circle"></i></button>
+                        <p style="text-align: center;">Cantidad: ${product.cantidad}</p>
+                        <button type= button class="button" onclick="restar('${product.id}')"><i class="bi bi-dash-circle"></i></button>
                         <p>Total: ${product.cantidad * product.precio}</p>`;
                     body.append(carrito);
 
@@ -338,7 +290,7 @@
                 const total = carritocomp.reduce((acc,pro) => acc + parseFloat(pro.precio) * (pro.cantidad), 0)
                     const totalproducts = document.createElement("div");
                     totalproducts.className = "total-content";
-                    totalproducts.innerHTML = `Pago total: $ ${total}`;
+                    totalproducts.innerHTML = `<b>Pago total: $ ${total}</b>`;
                     body.append(totalproducts);
             };
 
