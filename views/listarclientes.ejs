@@ -1,126 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <%- include('head'); %>
-    <title>Lista Clientes</title>
-    <style>
-        .button {
-          border: none;
-          color: #ffffff;
-          padding: 4px 18px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 13px;
-          margin: 4px 2px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-        }
+        <title>Lista Clientes</title>
         
-        .button1 {
-          background-color: white; 
-          color: black; 
-          border: 2px solid #4CAF50;
-        }
-        
-        .button1:hover {
-          background-color: #4CAF50;
-          color: white;
-        }
+        <style>
+            .button {
+                border: none;
+                color: #ffffff;
+                padding: 4px 18px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 13px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+            }
 
-        .button2 {
-          background-color: white; 
-          color: black; 
-          border: 2px solid #df3b3b;
-        }
-        
-        .button2:hover {
-          background-color: #df3b3b;
-          color: white;
-        }
+            .button1 {
+                background-color: white;
+                color: black;
+                border: 2px solid #4CAF50;
+            }
 
-        h1, h2 {
-            text-align: center;
-        }
+            .button1:hover {
+                background-color: #4CAF50;
+                color: white;
+            }
 
-        #customers {
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
+            .button2 {
+                background-color: white;
+                color: black;
+                border: 2px solid #df3b3b;
+            }
 
-        #customers td, #customers th {
-            border: 1px solid #ddd;
-            padding: 5px;
-        }
+            .button2:hover {
+                background-color: #df3b3b;
+                color: white;
+            }
 
-        #customers tr:nth-child(even){background-color: #f2f2f2;}
+            h1,
+            h2 {
+                text-align: center;
+            }
 
-        #customers tr:hover {background-color: #ddd;}
+            #customers {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
 
-        #customers th {
-            text-align: center;
-            background-color: #188a60;
-            color: white;
-        }
+            #customers td,
+            #customers th {
+                border: 1px solid #ddd;
+                padding: 5px;
+            }
 
-        #customers td {
-            text-align: center;
-        }
+            #customers tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
 
-        
-    </style>
+            #customers tr:hover {
+                background-color: #ddd;
+            }
+
+            #customers th {
+                text-align: center;
+                background-color: #188a60;
+                color: white;
+            }
+
+            #customers td {
+                text-align: center;
+            }
+
+            #logo-empresa {
+
+                color: white;
+                text-shadow:
+                    0 0 5px white,
+                    0 0 10px white,
+                    0 0 15px white,
+                    0 0 20px lime,
+                    0 0 30px lime,
+                    0 0 40px lime,
+                    0 0 55px lime,
+                    0 0 75px lime;
+
+            }
+        </style>
 </head>
+
 <body class="container">
 
-<header>
-    <%- include('header'); %>
-</header>
+    <header>
+        <%- include('header'); %>
 
-<main>
-    <div class="form-group">
-        <form>
-        <h2>Listado clientes</h2>
-            <table id="customers">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-3" href="#" id="logo-empresa">FreakStore</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Vendedores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">- Empty -</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link</a></li>
+                    <li><a class="dropdown-item" href="#">Another link</a></li>
+                    <li><a class="dropdown-item" href="#">A third link</a></li>
+                    </ul>
+                    </li> -->
+                        </ul>
+                        <ul>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    </header>
+
+    <main><br><br><br>
+        <div class="form-group">
+            <form>
+                <h2>Listado clientes</h2>
+                <table id="customers">
                     <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nombre</th>
-                        <th>Teléfono</th>
-                        <th>Total compras</th>
-                        <th>Administrar</th>
-                    </tr>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nombre</th>
+                            <th>Teléfono</th>
+                            <th>Total compras</th>
+                            <th>Administrar</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    
-                        <% listaclientes.forEach(function(clients) { %>
-                    <tr>
-                        <td><%=clients.id %></td>
-                        <td><%=clients.Nombre %></td>
-                        <td><%=clients.Telefono %></td>
-                        <td><%=clients.TotalCompras %></td>
-                        <td><button type="button" class="button button1" data-toggle="modal" data-target="#update"><i class="fa fa-edit"></i>  Editar</button><button type="button" class="button button2" data-toggle="modal" data-target="#delete"><i class="fa fa-close"></i>  Eliminar</button></td>
-                        
 
-                    </tr>
-                        <% }); %>
+                        <% listaclientes.forEach(function(clients) { %>
+                            <tr>
+                                <td>
+                                    <%=clients.id %>
+                                </td>
+                                <td>
+                                    <%=clients.Nombre %>
+                                </td>
+                                <td>
+                                    <%=clients.Telefono %>
+                                </td>
+                                <td>
+                                    <%=clients.TotalCompras %>
+                                </td>
+                                <td><button type="button" class="button button1" data-toggle="modal"
+                                        data-target="#update"><i class="fa fa-edit"></i> Editar</button><button
+                                        type="button" class="button button2" data-toggle="modal"
+                                        data-target="#delete"><i class="fa fa-close"></i> Eliminar</button></td>
+
+
+                            </tr>
+                            <% }); %>
                     </tbody>
 
-            </table>
-        </form>
+                </table>
+            </form>
 
-    </div>
+        </div>
 
-    
-</main>
 
-<footer>
-    <%- include('footer'); %>
-</footer>
-  
+    </main>
+
+    <footer>
+        <%- include('footer'); %>
+    </footer>
+
 </body>
+
 </html>

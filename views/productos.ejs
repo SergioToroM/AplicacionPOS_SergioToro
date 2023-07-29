@@ -66,6 +66,7 @@
     }
 
     #logo-empresa {
+        
         color: white;
         text-shadow:
             0 0 5px white,
@@ -78,6 +79,7 @@
             0 0 75px lime;
 
     }
+
 
     #carritonavbar {
         font-size: 25px;
@@ -103,19 +105,30 @@
         justify-content: space-around;
     }
 
-    .d-flex {
-        border: 2px none black;
-        border-radius: 10px;
-        padding: 20px;
-    
+    /* .d-flex {
+        
+        color: red;
+        
+    } */
+
+    .offcanvas-footer {
+        text-align: center;
+        color: red;
     }
 
-    .offcanvas-footer{
-        text-align: center;        
-        color:red;
+    #agruparcarrito {
+        
+        border: 1px none rgb(184, 179, 179);
+        padding: 1em;
+        border-radius: 15px;
+        margin: 4px;
+        background-color: white;
+        box-shadow: 3px 3px 10px;
+        width: 370px;
+        height: 160px;
     }
-    
 
+    
 
 </style>
 
@@ -169,8 +182,8 @@
         <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
 
         </div>
-        <div class="offcanvas-footer" id="footerTotal">
-        <p>Total a pagar: </p>
+        <div class="offcanvas-footer" id="totalProduct">
+            <!-- <p>Total a pagar: </p> -->
         </div>
 
     </div>
@@ -198,13 +211,16 @@
                                 alt="Card image" style="width:100%">
                             <div class="card-body">
                                 <h6 class="card-title">
-                                    <b>Referencia: </b><%=product.referencia %>
+                                    <b>Referencia: </b>
+                                    <%=product.referencia %>
                                 </h6>
                                 <p class="card-text">
-                                    <b>Descripción: </b><%=product.nombre %>
+                                    <b>Descripción: </b>
+                                    <%=product.nombre %>
                                 </p>
                                 <h6 class="card-text">
-                                    <b>Precio $ </b><%=product.precio %>
+                                    <b>Precio $ </b>
+                                    <%=product.precio %>
                                 </h6>
 
 
@@ -268,15 +284,33 @@
 
                 carritocomp.forEach(product => {
                     let carrito = document.createElement('div')
-                    carrito.classList.add('d-flex', 'flex-wrap', 'align-content-around', 'justify-content-between', 'align-items-center');
+                    carrito.classList.add('d-flex');
                     carrito.innerHTML =
-                        `<img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
-                        <p>${product.nombre}</p>
-                        <p>$ ${product.precio}</p>
-                        <button type= button class="button" onclick="sumar('${product.id}')"><i class="bi bi-plus-circle"></i></button>
-                        <p style="text-align: center;">Cantidad: ${product.cantidad}</p>
-                        <button type= button class="button" onclick="restar('${product.id}')"><i class="bi bi-dash-circle"></i></button>
-                        <p>Total: $ ${product.cantidad * product.precio}</p>`;
+                        `<form id="agruparcarrito">
+                        <tr>
+                        <td>
+                            <img src="https://source.unsplash.com/featured/300x201" style="height: 38px;">
+                        </td>
+                        
+                        <td>
+                            ${product.nombre}
+                        
+                        </td>
+                        </tr>
+                        <tr>
+                        <td>
+                            $ ${product.precio}
+                        </td>
+                        
+                        <td>
+                            <button type= button class="button" onclick="sumar('${product.id}')"><i class="bi bi-plus-circle"></i></button>
+                            <p style="text-align: center;">Cantidad: ${product.cantidad}</p>
+                            <button type= button class="button" onclick="restar('${product.id}')"><i class="bi bi-dash-circle"></i></button>
+                            
+                            <p>Total: $ ${product.cantidad * product.precio}</p>
+                        </td>
+                        </tr>
+                        </form>`;
                     body.append(carrito);
 
                     let eliminarprod = document.createElement('span');
@@ -293,7 +327,7 @@
                 const footerttl = document.createElement("div");
                 footerttl.innerHTML = `<b>Pago total: $ ${total}</b>`;
                 totalproducts.className = "total-content";
-                totalproducts.innerHTML = `<b>Pago total: $ ${total}</b>`;
+                // totalproducts.innerHTML = `<b>Pago total: $ ${total}</b>`;
                 body.append(totalproducts);
                 footerTotal.append(footerttl);
 
