@@ -27,8 +27,6 @@
         margin: 0;
     } */
 
-
-
     body {
         background-repeat: no-repeat;
         background-size: cover;
@@ -49,12 +47,6 @@
         box-shadow: 3px 3px 10px;
     }
 
-    .carousel-inner img {
-        height: 350px;
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
-    }
 
     #productos {
         text-align: center;
@@ -64,6 +56,13 @@
     .delete-producto {
         cursor: pointer;
     }
+
+    @font-face {
+        font-family: "rogthem";
+        src: url('/fonts/rogthem.ttf')!important;
+    }
+    .nuevaFuente {font-family: 'rogthem';}
+    
 
     #logo-empresa {
         
@@ -77,7 +76,6 @@
             0 0 40px lime,
             0 0 55px lime,
             0 0 75px lime;
-
     }
 
 
@@ -105,8 +103,9 @@
     }          
 
     .offcanvas-footer {
-        text-align: center;
         color: red;
+        display: flex;
+        justify-content: space-around;
     }
 
     #agruparcarrito {
@@ -156,7 +155,7 @@
                 </ul>
                 <ul>
                     <div class="carritoecompras">
-                        <button class="btn btn-primary" id="carritonavbar" type="button" onclick="pintarCarrito()"
+                        <button class="btn btn-dark" id="carritonavbar" type="button" onclick="pintarCarrito()"
                             data-bs-toggle="offcanvas" data-bs-target="#demo"><i class="bi bi-cart4"></i>
 
                         </button>
@@ -177,6 +176,7 @@
         </div>
         <div class="offcanvas-footer" id="totalProduct">
             <!-- <p>Total a pagar: </p> -->
+            <button type="button" class="btn btn-dark">Comprar</button>
         </div>
 
     </div>
