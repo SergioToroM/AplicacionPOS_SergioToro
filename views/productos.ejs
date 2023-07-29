@@ -27,12 +27,12 @@
         margin: 0;
     } */
 
-    body {
+    /* body {
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         margin-bottom: 30px;
-    }
+    } */
 
     .container-card {
         display: inline-table;
@@ -58,10 +58,16 @@
     }
 
     @font-face {
-        font-family: "rogthem";
-        src: url('/fonts/rogthem.ttf')!important;
+        font-family: 'Rogthem';
+        src: url('/fonts/Rogthem.eot');
+        src: local('Rogthem'),
+            url('/fonts/Rogthem.ttf') format('truetype'),
+            url('/fonts/Rogthem.woff2') format('woff2'),
+            url('/fonts/Rogthem.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
     }
-    .nuevaFuente {font-family: 'rogthem';}
+    .nuevaFuente {font-family: 'Rogthem';}
     
 
     #logo-empresa {
@@ -186,9 +192,6 @@
 </header>
 
 <body>
-
-
-
 
     <%- include('header'); %>
         <main>

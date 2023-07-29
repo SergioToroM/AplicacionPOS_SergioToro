@@ -18,7 +18,7 @@ app.use('/api',mirouter);
 
 const PORT = 4090;
 
-app.get('/', (req,res) =>{res.render('../views/productos',)});
+app.get('/', (req,res) =>{res.render('../views/landing',)});
 
 app.listen( process.env.PORT || 4090,()=>{
     console.log('En línea, puerto', PORT );
