@@ -67,9 +67,13 @@ exports.dbproductos = async(req,res) => {
     // console.log(products);
     let productoslista = await products.find();
     // console.log(productoslista);
-    res.render('productos', {
+    res.render('listarproductos', {
         'listaproductos': productoslista
     });
+}
+
+exports.productos = (req, res) => {
+    res.render('Productos');
 }
 
 

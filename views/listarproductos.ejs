@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <%- include('head'); %>
-        <title>Lista Clientes</title>
+        <title>Lista Productos</title>
         
         <style>
             .button {
@@ -52,33 +52,33 @@
                 text-align: center;
             }
 
-            #customers {
+            #products {
                 font-family: Arial, Helvetica, sans-serif;
                 border-collapse: collapse;
                 width: 100%;
             }
 
-            #customers td,
-            #customers th {
+            #products td,
+            #products th {
                 border: 1px solid #ddd;
                 padding: 5px;
             }
 
-            #customers tr:nth-child(even) {
+            #products tr:nth-child(even) {
                 background-color: #f2f2f2;
             }
 
-            #customers tr:hover {
+            #products tr:hover {
                 background-color: #ddd;
             }
 
-            #customers th {
+            #products th {
                 text-align: center;
                 background-color: #188a60;
                 color: white;
             }
 
-            #customers td {
+            #products td {
                 text-align: center;
             }
 
@@ -104,78 +104,83 @@
     <header>
         <%- include('header'); %>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand fs-3" href="#" id="logo-empresa">FreakStore</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavbar">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clientes</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Registrar clientes</a></li>
-                                    <li><a class="dropdown-item" href="#">Listar clientes</a></li>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3" href="#" id="logo-empresa">FreakStore</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clientes</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Registrar clientes</a></li>
+                                <li><a class="dropdown-item" href="#">Listar clientes</a></li>
                                 
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendedores</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Registrar vendedores</a></li>
-                                    <li><a class="dropdown-item" href="#">Listar vendedores</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendedores</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Registrar vendedores</a></li>
+                                <li><a class="dropdown-item" href="#">Listar vendedores</a></li>
                                 
-                                </ul>
+                            </ul>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" href="#">Clientes</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">- Empty -</a>
-                            </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Clientes</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">- Empty -</a>
+                        </li>
                         <ul>
 
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
     </header>
 
     <main><br><br><br>
         <div class="form-group">
             <form>
-                <h2>Listado clientes</h2>
-                <table id="customers">
+                <h2>Lista productos</h2>
+                <table id="products">
                     <thead>
                         <tr>
                             <th>Id</th>
+                            <th>Referencia</th>
                             <th>Nombre</th>
-                            <th>Correo</th>
-                            <th>Teléfono</th>
-                            <th>Total compras</th>
+                            <th>Descripción</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
                             <th>Administrar</th>
                         </tr>
                     </thead>
                     <tbody>
 
-                        <% listaclientes.forEach(function(clients) { %>
+                        <% listaproductos.forEach(function(listproducts) { %>
                             <tr>
                                 <td>
-                                    <%=clients.id %>
+                                    <%=listproducts.id %>
                                 </td>
                                 <td>
-                                    <%=clients.Nombre %>
+                                    <%=listproducts.referencia %>
                                 </td>
                                 <td>
-                                    <%=clients.Correo %>
+                                    <%=listproducts.nombre %>
                                 </td>
                                 <td>
-                                    <%=clients.Telefono %>
+                                    <%=listproducts.descripcion %>
                                 </td>
                                 <td>
-                                    <%=clients.TotalCompras %>
+                                    <%=listproducts.precio %>
+                                </td>
+                                <td>
+                                    <%=listproducts.stock %>
                                 </td>
                                 <td><button type="button" class="button button1" data-toggle="modal"
                                         data-target="#update"><i class="fa fa-edit"></i> Editar</button><button
