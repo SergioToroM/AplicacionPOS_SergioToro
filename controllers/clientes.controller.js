@@ -72,11 +72,23 @@ exports.dbproductos = async(req,res) => {
     });
 }
 
-exports.productos = (req, res) => {
+exports.productos = (req,res) => {
     res.render('Productos');
 }
 
-
+exports.createProducto = async(req,res) => {
+    console.log(req.body);
+    const agregarprod = new products({
+        referencia : req.body.referencia,
+        nombre : req.body.nombre,
+        descripcion : req.body.descripcion,
+        precio : req.body.precio,
+        stock : req.body.stock
+    });
+    await agregarprod.save();
+    res.redirect('/api/listarproductos');
+    console.log('Productos');
+};
 
 
 //GRAFICO
