@@ -51,6 +51,7 @@ exports.createVendedores = async(req,res) => {
     const Vendedores = new vendedor({
         Nombre : req.body.Nombre,
         Documento : req.body.Documento,
+        Correo : req.body.Correo,
         VentasDespachadas : req.body.VentasDespachadas
     });
     await Vendedores.save();
