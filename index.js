@@ -16,10 +16,10 @@ app.use(express.json());
 app.use('/api',mirouter);
 
 
-const PORT = 4090;
+const PORT = 4080;
 
 app.get('/', (req,res) =>{res.render('../views/landing',)});
 
-app.listen( process.env.PORT || 4090,()=>{
+app.listen( process.env.PORT || 4080,()=>{
     console.log('En línea, puerto', PORT );
 });

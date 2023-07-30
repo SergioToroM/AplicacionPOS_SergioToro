@@ -23,7 +23,8 @@ exports.createClientes = async(req,res) => {
         Telefono : req.body.Telefono,
         Ubicacion : req.body.Ubicacion,
         TotalCompras : req.body.TotalCompras,
-        HistoricoCompras : req.body.HistoricoCompras
+        HistoricoCompras : req.body.HistoricoCompras,
+        Correo : req.body.Correo
     });
     Clientes.save();
     res.redirect('/api/listarclientes');
@@ -69,6 +70,8 @@ exports.dbproductos = async(req,res) => {
         'listaproductos': productoslista
     });
 }
+
+
 
 
 //GRAFICO
