@@ -3,10 +3,10 @@ const {Schema} = mongoose;
 
 const VentasShema = new Schema({
     productosVenta: {type: String},
-    subtotalVenta: {type: number},
+    subtotalVenta: {type: Number},
     fechaVenta: {type: Date},
-    impuesto: {type: number},
-    totalVenta: {type: number},
+    impuesto: {type: Number},
+    totalVenta: {type: Number},
     clienteCompra: {type: String},
     vendedorCompra: {type: String}
 });

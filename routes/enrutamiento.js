@@ -1,8 +1,8 @@
 const express = require('express');
-const dbclientes = require('../controllers/clientes.controller');
-const dbvendedores = require('../controllers/clientes.controller');
-const dbproductos = require('../controllers/clientes.controller');
-const dbgrafico = require('../controllers/clientes.controller');
+const dbclientes = require('../controllers/controller');
+const dbvendedores = require('../controllers/controller');
+const dbproductos = require('../controllers/controller');
+const dbgrafico = require('../controllers/controller');
 const router = express.Router();
 const enviarcorreo = require('../controllers/correo');
 
