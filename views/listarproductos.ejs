@@ -182,10 +182,10 @@
                                 <td>
                                     <%=listproducts.stock %>
                                 </td>
-                                <td><button type="button" class="button button1" data-toggle="modal"
-                                        data-target="#update"><i class="fa fa-edit"></i> Modificar</button><button
+                                <td><button type="button" class="button button1" data-bs-toggle="modal"
+                                        data-bs-target="#modificarProducto"><i class="fa fa-edit"></i> Modificar</button><button
                                         type="button" class="button button2" data-toggle="modal"
-                                        data-target="#delete"><i class="fa fa-close"></i> Eliminar</button></td>
+                                        data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
 
 
                             </tr>
@@ -196,6 +196,70 @@
             </form>
 
         </div>
+
+        
+        <!-- Button trigger modal MODIFICAR -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modificarProducto">
+            
+        </button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="modificarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar artículo</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <form id="modalProducts">
+                    
+
+                            
+                        
+
+                            </form>
+                        </div>
+                     <div class="modal-footer">
+                        <button type="button" class="button button2" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="button button1">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Button trigger modal ELIMINAR -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarProducto">
+            
+        </button>
+  
+        <!-- Modal -->
+        <div class="modal fade" id="eliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar artículo</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="modalProducts">
+                            
+
+                                    
+                                
+
+                            </form>
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button button2" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="button button1">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
 
 
     </main>
