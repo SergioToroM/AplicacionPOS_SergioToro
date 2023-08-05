@@ -1,6 +1,7 @@
 const cliente = require('../models/cliente');
 const vendedor = require('../models/vendedores');
 const products = require ('../models/productos');
+const listarproducts = require ('../models/productos');
 const graficos = require('../models/grafico');
 // const descargarExcel = require ('../models/productos');
 
@@ -65,7 +66,7 @@ exports.createVendedores = async(req,res) => {
 //Listar
 exports.dbproductos = async(req,res) => {
     // console.log(products);
-    let productoslista = await products.find();
+    let productoslista = await listarproducts.find();
     // console.log(productoslista);
     res.render('listarproductos', {
         'listaproductos': productoslista
@@ -75,6 +76,21 @@ exports.dbproductos = async(req,res) => {
 exports.productos = (req,res) => {
     res.render('Productos');
 }
+
+
+exports.ventaproductos = async(req,res) => {
+    // console.log(products);
+    let losproductos = await products.find();
+    // console.log(productoslista);
+    res.render('productos', {
+        'todosproductos': losproductos
+    });
+}
+
+exports.productos = (req,res) => {
+    res.render('Productos');
+}
+
 
 exports.createProducto = async(req,res) => {
     console.log(req.body);
