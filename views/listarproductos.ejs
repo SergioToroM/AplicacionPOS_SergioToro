@@ -182,7 +182,7 @@
                                 <td>
                                     <%=listproducts.stock %>
                                 </td>
-                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto"><i class="fa fa-edit"></i> Modificar</button>
+                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto" onclick="camposProducto(`<%=listproducts.id %>`,`<%=listproducts.referencia %>`,`<%=listproducts.nombre %>`,`<%=listproducts.descripcion %>`,`<%=listproducts.precio %>`,`<%=listproducts.stock %>`)"><i class="fa fa-edit"></i> Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal" data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
 
 
@@ -214,19 +214,27 @@
                                 
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">ID:</label>
-                                    <input type="text" class="form-control" id="idupdate">
+                                    <input type="text" class="form-control" id="idproducto" readonly>
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="idnombrecliente">
+                                    <input type="text" class="form-control" id="idreferenciaprod">
                                   </div>
                                   <div class="mb-3">
                                       <label for="message-text" class="col-form-label">Correo:</label>
-                                      <input type="text" class="form-control" id="idcorreocliente">
+                                      <input type="text" class="form-control" id="idnombreproducto">
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Teléfono:</label>
-                                    <input type="text" class="form-control" id="idtelefonocliente">
+                                    <input type="text" class="form-control" id="iddescripcionprod">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idpreecioprod">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idstockprod">
                                 </div>
                         
 
@@ -279,6 +287,17 @@
     <footer>
         <%- include('footer'); %>
     </footer>
+
+    <script>
+        function camposProducto(a,b,c,d,e,f) {
+            idproducto.value = a,
+            idreferenciaprod.value = b,
+            idnombreproducto.value = c,
+            iddescripcionprod.value = d,
+            idpreecioprod.value = e,
+            idstockprod.value = f
+        }
+    </script>
 
 </body>
 

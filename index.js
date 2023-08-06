@@ -6,6 +6,7 @@ const path = require('path');
 
 const mirouter = require('./routes/enrutamiento')
 const env = require('dotenv');
+const { clientes } = require('./controllers/controller');
 env.config();
 app.use(logger('dev'));
 
@@ -16,10 +17,13 @@ app.use(express.json());
 app.use('/api',mirouter);
 
 
-const PORT = 4080;
+const PORT = 4070;
 
 app.get('/', (req,res) =>{res.render('../views/productos',)});
 
-app.listen( process.env.PORT || 4080,()=>{
+app.listen( process.env.PORT || 4070,()=>{
     console.log('En línea, puerto', PORT );
 });
+
+
+
