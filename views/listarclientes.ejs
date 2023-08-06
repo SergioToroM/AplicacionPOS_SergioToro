@@ -177,10 +177,10 @@
                                 <td>
                                     <%=clients.TotalCompras %>
                                 </td>
-                                <td><button type="button" class="button button1" data-toggle="modal"
-                                        data-target="#update"><i class="fa fa-edit"></i> Modificar</button><button
-                                        type="button" class="button button2" data-toggle="modal"
-                                        data-target="#delete"><i class="fa fa-close"></i> Eliminar</button></td>
+                                <td>
+                                    <button type="button" class="button button1" data-bs-toggle="modal" onclick="campos(`<%=clients.id %>`, `<%=clients.Nombre %>`, `<%=clients.Correo %>`,`<%=clients.Telefono %>`,`<%=clients.TotalCompras %>`)" data-bs-target="#modificarCliente"><i class="fa fa-edit"></i> Modificar</button>
+                                    <button type="button" class="button button2" data-bs-toggle="modal" onclick="eliminarcampos(`<%=clients.id %>`, `<%=clients.Nombre %>`, `<%=clients.Correo %>`,`<%=clients.Telefono %>`,`<%=clients.TotalCompras %>`)" data-bs-target="#eliminarCliente"><i class="fa fa-save"></i> Eliminar</button>
+                                </td>
 
 
                             </tr>
@@ -193,11 +193,118 @@
         </div>
 
 
+  
+        <!-- Modal actualizar-->
+        <div class="modal fade" id="modificarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Cliente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                        <div class="modal-body">
+                            <form id="updatecliente" method="post">
+                                
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">ID:</label>
+                                    <input type="text" class="form-control" id="idcliente" >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="idnombrecliente">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Correo:</label>
+                                      <input type="text" class="form-control" id="idcorreocliente">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idtelefonocliente">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Total compras:</label>
+                                    <input type="text" class="form-control" id="idtotalcompras">
+                                </div>
+                        
+
+                            </form>
+                        </div>
+                     <div class="modal-footer">
+                        <button type="button" class="button button2" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="button button1" data-bs-dismiss="modal">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="eliminarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar cliente</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="deleteCliente" method="post">
+                                
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">ID:</label>
+                                    <input type="text" class="form-control" id="idupdatecliente" >
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="idnombrecliente">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Correo:</label>
+                                      <input type="text" class="form-control" id="idcorreocliente">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idtelefonocliente">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Total compras:</label>
+                                    <input type="text" class="form-control" id="idtotalcompras">
+                                </div>
+                        
+
+                            </form>
+                        </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button button2" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="button button1" data-bs-dismiss="modal">Guardar cambios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
         <%- include('footer'); %>
     </footer>
+
+    <script>
+        function campos(a,b,c,d,e) {
+            idcliente.value = a,
+            idnombrecliente.value = b,
+            idcorreocliente.value = c,
+            idtelefonocliente.value = d,
+            idtotalcompras.value = e
+        }
+
+        function eliminarcampos(a,b,c,d){
+            idupdatecliente.value = a,
+            idnombrecliente.value = b,
+            idcorreocliente.value = c,
+            idtelefonocliente.value = d
+        }
+      </script>
 
 </body>
 

@@ -182,10 +182,8 @@
                                 <td>
                                     <%=listproducts.stock %>
                                 </td>
-                                <td><button type="button" class="button button1" data-bs-toggle="modal"
-                                        data-bs-target="#modificarProducto"><i class="fa fa-edit"></i> Modificar</button><button
-                                        type="button" class="button button2" data-toggle="modal"
-                                        data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
+                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto"><i class="fa fa-edit"></i> Modificar</button>
+                                    <button type="button" class="button button2" data-toggle="modal" data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
 
 
                             </tr>
@@ -212,9 +210,24 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                         <div class="modal-body">
-                            <form id="modalProducts">
-
-                                <p>Id</p><input type="text">                           
+                            <form id="updateproducto" method="post">
+                                
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">ID:</label>
+                                    <input type="text" class="form-control" id="idupdate">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="idnombrecliente">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Correo:</label>
+                                      <input type="text" class="form-control" id="idcorreocliente">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idtelefonocliente">
+                                </div>
                         
 
                             </form>
