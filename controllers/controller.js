@@ -80,11 +80,16 @@ exports.productos = (req,res) => {
 
 exports.ventaproductos = async(req,res) => {
     // console.log(products);
-    let losproductos = await products.find();
-    // console.log(productoslista);
+    const losproductos = await products.find();
+   // console.log(productoslista);
     res.render('productos', {
         'todosproductos': losproductos
     });
+    /**  const  productos =await catalogos.find();
+  
+      res.render('productos',{
+          "productos":productos
+      }); */
 }
 
 exports.productos = (req,res) => {
@@ -105,6 +110,9 @@ exports.createProducto = async(req,res) => {
     res.redirect('/api/listarproductos');
     console.log('Productos');
 };
+
+
+
 
 
 //GRAFICO

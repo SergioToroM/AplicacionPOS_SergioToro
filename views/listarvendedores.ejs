@@ -114,10 +114,10 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vendedores</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Registrar vendedores</a></li>
-                            <li><a class="dropdown-item" href="#">Listar vendedores</a></li>
+                            <li><a class="dropdown-item" href="#">Registrar productos</a></li>
+                            <li><a class="dropdown-item" href="#">Listar productos</a></li>
                         
                         </ul>
                     </li>
@@ -160,7 +160,7 @@
                         <td><%=sellers.Documento %></td>
                         <td><%=sellers.Correo %></td>
                         <td><%=sellers.VentasDespachadas %></td>
-                        <td><button type="button" class="button button1" data-toggle="modal" data-target="#update"><i class="fa fa-edit"></i>  Modificar</button><button type="button" class="button button2" data-toggle="modal" data-target="#delete"><i class="fa fa-close"></i>  Eliminar</button></td>
+                        <td><button type="button" class="button button1" data-bs-toggle="modal" onclick="camposVendedor(`<%=sellers.id %>`,`<%=sellers.Nombre %>`,`<%=sellers.Documento %>`,`<%=sellers.Correo %>`,`<%=sellers.VentasDespachadas %>`)" data-bs-target="#modificarVendedor"><i class="fa fa-edit"></i>  Modificar</button><button type="button" class="button button2" data-toggle="modal" data-target="#delete"><i class="fa fa-close"></i>  Eliminar</button></td>
                         
                         
 
@@ -173,12 +173,65 @@
 
     </div>
 
+    <!-- Modal modificar-->
+    <div class="modal fade" id="modificarVendedor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Vendedor</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                    <div class="modal-body">
+                        <form id="/api/modificar-vendedor" method="put">
+                            
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">ID:</label>
+                                <input type="text" class="form-control" id="idvendedor" readonly>
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="idnombrevendedor">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">Documento:</label>
+                                  <input type="text" class="form-control" id="iddocvendedor">
+                              </div>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Correo:</label>
+                                <input type="text" class="form-control" id="idcorreovendedor">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Ventas despachadas:</label>
+                                <input type="text" class="form-control" id="idventasdespachadas">
+                            </div>
+                    
+
+                        </form>
+                    </div>
+                 <div class="modal-footer">
+                    <button type="button" class="button button2" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="button button1" data-bs-dismiss="modal">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     
 </main>
 
 <footer>
     <%- include('footer'); %>
 </footer>
+
+    <script>
+        function camposVendedor(a,b,c,d,e) {
+            idvendedor.value = a,
+            idnombrevendedor.value = b,
+            iddocvendedor.value = c,
+            idcorreovendedor.value = d,
+            idventasdespachadas.value = e
+        }
+    </script>
   
 </body>
 </html>

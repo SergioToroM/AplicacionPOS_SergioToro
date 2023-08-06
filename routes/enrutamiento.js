@@ -16,8 +16,8 @@ router.get('/vendedores', dbvendedores.vendedores);
 router.get('/listarvendedores', dbvendedores.dbvendedores);
 router.post('/agregarv', dbvendedores.createVendedores);
 
-// router.get('/productos', ventaproductos.productos);
-router.get('/todosproductos', ventaproductos.productos);
+
+router.get('/productos', ventaproductos.ventaproductos);
 router.get('/listarproductos', dbproductos.dbproductos);
 router.post('/agregarprod', dbproductos.createProducto);
 
