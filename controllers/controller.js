@@ -96,7 +96,7 @@ exports.productos = (req,res) => {
     res.render('Productos');
 }
 
-
+// Agregar productos
 exports.createProducto = async(req,res) => {
     console.log(req.body);
     const agregarprod = new products({
