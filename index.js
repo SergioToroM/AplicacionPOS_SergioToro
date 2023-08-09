@@ -17,11 +17,11 @@ app.use(express.json());
 app.use('/api',mirouter);
 
 
-const PORT = 4070;
+const PORT = 4080;
 
 app.get('/', (req,res) =>{res.render('../views/productos',)});
 
-app.listen( process.env.PORT || 4070,()=>{
+app.listen( process.env.PORT || 4080,()=>{
     console.log('En línea, puerto', PORT );
 });
 
