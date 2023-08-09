@@ -101,14 +101,14 @@ exports.productos = (req,res) => {
 // Agregar productos
 exports.createProducto = async(req,res) => {
     console.log(req.body);
-    const agregarproduct = new products({
+    const Productos = new products({
         referencia : req.body.referencia,
         nombre : req.body.nombre,
         descripcion : req.body.descripcion,
         precio : req.body.precio,
         stock : req.body.stock
     });
-    await productos.save();
+    await Productos.save();
     res.redirect('/api/listarproductos');
     console.log('Productos');
 };
