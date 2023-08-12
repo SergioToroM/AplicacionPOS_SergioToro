@@ -2,7 +2,7 @@ const cliente = require('../models/cliente');
 const vendedor = require('../models/vendedores');
 const products = require ('../models/productos');
 const listarproducts = require ('../models/productos');
-const agregarprod = require ('../models/productos');
+const agregarproduct = require ('../models/productos');
 const graficos = require('../models/grafico');
 const productos = require('../models/productos');
 // const descargarExcel = require ('../models/productos');
@@ -101,14 +101,14 @@ exports.productos = (req,res) => {
 // Agregar productos
 exports.createProducto = async(req,res) => {
     console.log(req.body);
-    const Productos = new products({
+    const registrarProducto = new agregarproduct ({
         referencia : req.body.referencia,
         nombre : req.body.nombre,
         descripcion : req.body.descripcion,
         precio : req.body.precio,
         stock : req.body.stock
     });
-    await Productos.save();
+    await registrarProducto.save();
     res.redirect('/api/listarproductos');
     console.log('Productos');
 };

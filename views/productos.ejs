@@ -332,17 +332,19 @@
                     eliminarprod.addEventListener("click", eliminar);
 
                 });
+
+            
                 let footerTotal = document.getElementById('totalProduct');
                 const total = carritocomp.reduce((acc, pro) => acc + parseFloat(pro.precio) * (pro.cantidad), 0);
                 const totalproducts = document.createElement("div");
                 const footerttl = document.createElement("div");
                 footerttl.innerHTML = `<b>Pago total: $ ${total}</b>`;
                 totalproducts.className = "total-content";
-                // totalproducts.innerHTML = `<b>Pago total: $ ${total}</b>`;
+                totalproducts.innerHTML = `<b>Pago total: $ ${total}</b>`;
                 body.append(totalproducts);
                 footerTotal.append(footerttl);
-
             };
+            
 
             const eliminar = () => {
                 const foundId = carritocomp.find((product) => product.id);
