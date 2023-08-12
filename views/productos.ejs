@@ -183,12 +183,14 @@
     <!-- OffCanvas -->
     <div class="offcanvas offcanvas-end" id="demo">
         <div class="offcanvas-header">
-            <h1 class="offcanvas-title">Carrito</h1>
+            <h3 class="offcanvas-title">Carrito</h3>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
         </div>
+
         <div class="offcanvas-body" data-target="#vercarro" id="bodycarrito">
 
         </div>
+
         <div class="offcanvas-footer" id="totalProduct">
             <!-- <p>Total a pagar: </p> -->
             <button type="button" class="btn btn-dark">Comprar</button>
@@ -196,7 +198,7 @@
 
     </div>
 
-    </div>
+    
     <br><br><br>
 </header>
 
@@ -331,7 +333,7 @@
 
                 });
                 let footerTotal = document.getElementById('totalProduct');
-                const total = carritocomp.reduce((acc, pro) => acc + parseFloat(pro.precio) * (pro.cantidad), 0)
+                const total = carritocomp.reduce((acc, pro) => acc + parseFloat(pro.precio) * (pro.cantidad), 0);
                 const totalproducts = document.createElement("div");
                 const footerttl = document.createElement("div");
                 footerttl.innerHTML = `<b>Pago total: $ ${total}</b>`;
