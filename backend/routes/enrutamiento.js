@@ -1,25 +1,22 @@
 const express = require('express');
-const dbclientes = require('../controllers/controller');
-const dbvendedores = require('../controllers/controller');
-const dbproductos = require('../controllers/controller');
-const ventaproductos = require('../controllers/controller');
-const registrarProducto = require('../controllers/controller');
-const dbgrafico = require('../controllers/controller');
+const controller = require('../controllers/controller');
 const router = express.Router();
 const enviarcorreo = require('../controllers/correo');
 
 
-router.get('/clientes', dbclientes.clientes);
-router.get('/listarclientes', dbclientes.dbclientes);
-router.post('/agregar',dbclientes.createClientes);
+router.get('/clientes', controller.clientes);
+router.get('/listarclientes', controller.dbclientes);
+router.post('/agregar',controller.createClientes);
 
-router.get('/vendedores', dbvendedores.vendedores);
-router.get('/listarvendedores', dbvendedores.dbvendedores);
-router.post('/agregarv', dbvendedores.createVendedores);
+router.get('/vendedores', controller.vendedores);
+router.get('/listarvendedores', controller.dbvendedores);
+router.post('/agregarv', controller.createVendedores);
 
-router.get('/productos', ventaproductos.ventaproductos);
-router.get('/listarproductos', dbproductos.dbproductos);
-router.post('/agregarproduct', registrarProducto.createProducto);
+router.get('/productos', controller.ventaproductos);
+router.get('/listarproductos', controller.dbproductos);
+// router.post('/registrarproductos', registrarProducto.createProducto);
+router.get('/registrarproductos', controller.regproductos);
+
 
 
 // router.get('/excel', descargarExcel.descargarExcel);

@@ -94,8 +94,8 @@ exports.ventaproductos = async(req,res) => {
       }); */
 }
 
-exports.productos = (req,res) => {
-    res.render('Productos');
+exports.regproductos = (req,res) => {
+    res.render('registrarproductos');
 }
 
 // Agregar productos
