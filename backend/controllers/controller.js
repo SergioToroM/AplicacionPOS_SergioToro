@@ -63,6 +63,20 @@ exports.createVendedores = async(req,res) => {
     
 };
 
+// Editar vendedor
+exports.editarVendedor = async(req,res) => {
+    const n = await vendedor.findByIdAndUpdated(
+        id = req.params.id,
+        {
+            Nombre : req.body.idnombrevendedor,
+            Documento : req.body.iddocvendedor,
+            Correo : req.bodu.idcorreovendedor,
+            VentasDespachadas : req.body.idventasdespachadas
+        }
+    );
+    res.redirect('/listarvendedores');
+}
+
 
 //PRODUCTOS
 //Listar

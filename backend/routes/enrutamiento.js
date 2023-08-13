@@ -14,9 +14,8 @@ router.post('/agregarv', controller.createVendedores);
 
 router.get('/productos', controller.ventaproductos);
 router.get('/listarproductos', controller.dbproductos);
-// router.post('/registrarproductos', registrarProducto.createProducto);
 router.get('/registrarproductos', controller.regproductos);
-
+router.post('/registrarproductos', controller.createProducto);
 
 
 // router.get('/excel', descargarExcel.descargarExcel);
