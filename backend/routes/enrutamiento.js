@@ -10,6 +10,7 @@ router.post('/agregar',controller.createClientes);
 
 router.get('/vendedores', controller.vendedores);
 router.get('/listarvendedores', controller.dbvendedores);
+router.post('/editarVendedor/:id', controller.editarVendedor);
 router.post('/agregarv', controller.createVendedores);
 
 router.get('/productos', controller.ventaproductos);

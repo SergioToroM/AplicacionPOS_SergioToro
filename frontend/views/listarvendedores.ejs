@@ -141,7 +141,7 @@
                                 </td>
                                 <td><button type="button" class="button button1" data-bs-toggle="modal"
                                         onclick="modificarVendedor(`<%=sellers.id %>`,`<%=sellers.Nombre %>`,`<%=sellers.Documento %>`,`<%=sellers.Correo %>`,`<%=sellers.VentasDespachadas %>`)"
-                                        data-bs-target="#modificarVendedor"><i class="fa fa-edit"></i>
+                                        data-bs-target="#editarVendedor"><i class="fa fa-edit"></i>
                                         Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal"
                                         data-target="#delete"><i class="fa fa-close"></i> Eliminar</button>
@@ -156,7 +156,7 @@
         </div>
 
         <!-- Modal modificar-->
-        <div class="modal fade" id="modificarVendedor" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="editarVendedor" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -164,6 +164,7 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Vendedor</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                     <div class="modal-body">
                         <form id="modificarVend" method="POST">
 
