@@ -65,7 +65,7 @@ exports.createVendedores = async(req,res) => {
 
 // Editar vendedor
 exports.editarVendedor = async(req, res) => {
-    const editseller = await vendedor.findByIdAndUpdated(
+    const n = await vendedor.findByIdAndUpdated(
         id = req.params.id,
         {
             Nombre : req.body.idnombrevendedor,
