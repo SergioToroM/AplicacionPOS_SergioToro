@@ -64,7 +64,7 @@ exports.createVendedores = async(req,res) => {
 };
 
 // Editar vendedor
-exports.editarVendedor = async(req,res) => {
+exports.editarVendedor = async(req, res) => {
     const n = await vendedor.findByIdAndUpdated(
         id = req.params.id,
         {
@@ -74,6 +74,11 @@ exports.editarVendedor = async(req,res) => {
             VentasDespachadas : req.body.idventasdespachadas
         }
     );
+    res.redirect('/listarvendedores');
+}
+
+exports.eliminarVendedor = async(req, res) => {
+    await vendedor.findByIdAndDelete(id = req.params.id);
     res.redirect('/listarvendedores');
 }
 

@@ -144,7 +144,7 @@
                                         data-bs-target="#editarVendedor"><i class="fa fa-edit"></i>
                                         Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal"
-                                        data-target="#delete"><i class="fa fa-close"></i> Eliminar</button>
+                                        data-target="#eliminarVen"><i class="fa fa-close"></i> Eliminar</button>
                                 </td>
                             </tr>
                             <% }); %>
@@ -160,8 +160,9 @@
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+                    
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar Vendedor</h1>
+                        <h3 class="modal-title fs-5" id="exampleModalLabel">Modificar Vendedor</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -201,6 +202,32 @@
         </div>
 
 
+        <!-- Modal eliminar-->
+        <div class="modal fade" id="eliminarVen" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="exampleModalLabel">Modificar Vendedor</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <form id="eliminarV" method="POST">
+
+                            <h4>Está seguro de eliminar vendedor?</h4>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button button1" data-bs-dismiss="modal">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
@@ -218,6 +245,12 @@
             var form = modificarVend;
             form.setAttribute('action', `/controller/editarVendedor/${id}`);
         }
+
+        function eliminarVendedor(id){
+            var form = eliminarV;
+            form.setAttribute('action', `/controller/eliminarVende/${id}`);
+        }
+
     </script>
 
 </body>
