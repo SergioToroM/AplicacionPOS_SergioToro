@@ -61,16 +61,10 @@ exports.createVendedores = async (req, res) => {
 }
 
 // Editar vendedor
-exports.modificarVendedor = async (req, res) => {
-  const n = await vendedor.findByIdAndUpdated(
-    id = req.params.id,
-    {
-      Nombre: req.body.idnombrevendedor,
-      Documento: req.body.iddocvendedor,
-      Correo: req.body.idcorreovendedor,
-      VentasDespachadas: req.body.idventasdespachadas
-    }
-  )
+exports.modificarVend = async (req, res) => {
+  console.log(req.body)
+  const idvend = req.body._id
+  await vendedor.findByIdAndUpdate(idvend, req.body)
   res.redirect('/api/listarvendedores')
 }
 
