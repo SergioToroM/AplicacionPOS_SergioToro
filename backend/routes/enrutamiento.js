@@ -10,13 +10,15 @@ router.post('/agregar',controller.createClientes);
 
 router.get('/vendedores', controller.vendedores);
 router.get('/listarvendedores', controller.dbvendedores);
-router.post('/editarVendedor/:id', controller.editarVendedor);
+router.post('/editarVendedor/:id', controller.modificarVendedor);
 router.post('/eliminarVendedor/:id', controller.eliminarVendedor);
 router.post('/agregarv', controller.createVendedores);
 
 router.get('/productos', controller.ventaproductos);
 router.get('/listarproductos', controller.dbproductos);
 router.get('/registrarproductos', controller.regproductos);
+router.post('/editarProducto/:id', controller.editarProducto);
+router.post('/eliminarProducto/:id', controller.eliminarProducto);
 router.post('/registrarproductos', controller.createProducto);
 
 

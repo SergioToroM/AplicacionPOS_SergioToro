@@ -145,7 +145,7 @@
                                 <td>
                                     <%=listproducts.stock %>
                                 </td>
-                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto" onclick="camposProducto(`<%=listproducts.id %>`,`<%=listproducts.referencia %>`,`<%=listproducts.nombre %>`,`<%=listproducts.descripcion %>`,`<%=listproducts.precio %>`,`<%=listproducts.stock %>`)"><i class="fa fa-edit"></i> Modificar</button>
+                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto" onclick="editarProducto(`<%=listproducts.id %>`,`<%=listproducts.referencia %>`,`<%=listproducts.nombre %>`,`<%=listproducts.descripcion %>`,`<%=listproducts.precio %>`,`<%=listproducts.stock %>`)"><i class="fa fa-edit"></i> Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal" data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
 
 
@@ -160,11 +160,11 @@
 
         
         <!-- Button trigger modal MODIFICAR -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modificarProducto">
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modificarProducto">
             
-        </button>
+        </button> -->
   
-        <!-- Modal -->
+        <!-- Modal editar -->
         <div class="modal fade" id="modificarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -173,7 +173,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                         <div class="modal-body">
-                            <form id="updateproducto" method="post">
+                            <form id="modifProducto" method="post">
                                 
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">ID:</label>
@@ -193,7 +193,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Teléfono:</label>
-                                    <input type="text" class="form-control" id="idpreecioprod">
+                                    <input type="text" class="form-control" id="idprecioprod">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Teléfono:</label>
@@ -214,11 +214,11 @@
 
 
         <!-- Button trigger modal ELIMINAR -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarProducto">
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eliminarProducto">
             
-        </button>
+        </button> -->
   
-        <!-- Modal -->
+        <!-- Modal eliminar -->
         <div class="modal fade" id="eliminarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -226,12 +226,9 @@
                         <h1 class="modal-title fs-5" id="exampleModalLabel">Eliminar artículo</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body">
-                            <form id="modalProducts">
-                            
 
-                                    
-                                
+                        <div class="modal-body">
+                            <form id="eliminarPr" method="post">
 
                             </form>
                         </div>
@@ -252,14 +249,24 @@
     </footer>
 
     <script>
-        function camposProducto(a,b,c,d,e,f) {
-            idproducto.value = a,
-            idreferenciaprod.value = b,
-            idnombreproducto.value = c,
-            iddescripcionprod.value = d,
-            idpreecioprod.value = e,
-            idstockprod.value = f
+        function editarProducto(idpr,referencia,nombrepr,descripcionpr,preciopr,stock) {
+            idproducto.value = idpr,
+            idreferenciaprod.value = referencia,
+            idnombreproducto.value = nombrepr,
+            iddescripcionprod.value = descripcionpr,
+            idprecioprod.value = preciopr,
+            idstockprod.value = stock
+
+            var form = modifProducto;
+            form.setAttribute('action', `/controller/editarProducto/${id})`);
         }
+
+        function eliminarProducto(id){
+            var form = eliminarPr;
+            form.setAttribute('action', `/controller/eliminarProd/${id}`);
+
+        }
+
     </script>
 
 </body>

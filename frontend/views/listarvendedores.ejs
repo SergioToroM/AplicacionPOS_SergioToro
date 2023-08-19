@@ -167,7 +167,7 @@
                     </div>
 
                     <div class="modal-body">
-                        <form id="modificarVend" method="POST">
+                        <form id="modificarVend" method="post">
 
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">ID:</label>
@@ -248,7 +248,7 @@
 
         function eliminarVendedor(id){
             var form = eliminarV;
-            form.setAttribute('action', `/controller/eliminarVende/${id}`);
+            form.setAttribute('action', `/backend/controller/eliminarVendedor/${id}`);
         }
 
     </script>

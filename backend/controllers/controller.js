@@ -64,20 +64,20 @@ exports.createVendedores = async(req,res) => {
 };
 
 // Editar vendedor
-exports.editarVendedor = async(req, res) => {
+exports.modificarVendedor = async(req,res) => {
     const n = await vendedor.findByIdAndUpdated(
         id = req.params.id,
         {
             Nombre : req.body.idnombrevendedor,
             Documento : req.body.iddocvendedor,
-            Correo : req.bodu.idcorreovendedor,
+            Correo : req.body.idcorreovendedor,
             VentasDespachadas : req.body.idventasdespachadas
         }
     );
     res.redirect('/api/listarvendedores');
 }
 
-exports.eliminarVendedor = async(req, res) => {
+exports.eliminarVendedor = async(req,res) => {
     await vendedor.findByIdAndDelete(id = req.params.id);
     res.redirect('/api/listarvendedores');
 }
@@ -106,11 +106,7 @@ exports.ventaproductos = async(req,res) => {
     res.render('productos', {
         'todosproductos': losproductos
     });
-    /**  const  productos =await catalogos.find();
-  
-      res.render('productos',{
-          "productos":productos
-      }); */
+
 }
 
 exports.regproductos = (req,res) => {
@@ -131,6 +127,27 @@ exports.createProducto = async(req,res) => {
     res.redirect('/api/listarproductos');
     console.log('Productos');
 };
+
+exports.editarProducto = async(req,res) => {
+    const n = await products.findByIdAndUpdate(
+        id = req.params.id,
+        {
+            producto : req.body.idproducto,
+            referencia : req.body.idreferenciaprod,
+            nombre : req.body.idnombreproducto,
+            descripcion : req.body.iddescripcionprod,
+            precio : req.body.idprecioprod,
+            stock : req.body.idstockprod
+        }
+    );
+    res.redirect('/api/listarproductos');
+}
+
+exports.eliminarProducto = async(req,res) => {
+    await products.findByIdAndDelete(id = req.params.id);
+    res.redirect('/api/listarproductos');
+}
+
 
 
 
