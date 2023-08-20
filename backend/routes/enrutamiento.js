@@ -5,6 +5,7 @@ const enviarcorreo = require('../controllers/correo')
 
 router.get('/clientes', controller.clientes)
 router.get('/listarclientes', controller.dbclientes)
+router.post('/modificarCliente', controller.editarCliente)
 router.post('/agregar', controller.createClientes)
 
 router.get('/vendedores', controller.vendedores)

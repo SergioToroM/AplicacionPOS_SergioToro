@@ -34,6 +34,14 @@ exports.createClientes = async (req, res) => {
   console.log('Clientes')
 }
 
+exports.editarCliente = async (req, res) => {
+  console.log(req.body)
+  const idclien = req.body._id
+  await products.findByIdAndUpdate(idclien, req.body)
+  res.redirect('/api/listarclientes')
+}
+
+
 /// VENDEDORES
 // Listar
 exports.dbvendedores = async (req, res) => {
@@ -69,7 +77,7 @@ exports.modificarVend = async (req, res) => {
 }
 
 exports.eliminarVendedor = async (req, res) => {
-  await vendedor.findByIdAndDelete(id = req.params.id)
+  await vendedor.findByIdAndDelete(_id = req.params.id)
   res.redirect('/api/listarvendedores')
 }
 
@@ -124,6 +132,7 @@ exports.editarProducto = async (req, res) => {
   res.redirect('/api/listarproductos')
 }
 
+// Eliminar producto
 exports.eliminarProducto = async (req, res) => {
   await products.findByIdAndDelete(id = req.params.id)
   res.redirect('/api/listarproductos')

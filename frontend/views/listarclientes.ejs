@@ -142,8 +142,8 @@
                                     <%=clients.TotalCompras %>
                                 </td>
                                 <td>
-                                    <button type="button" class="button button1" data-bs-toggle="modal" onclick="camposCliente(`<%=clients.id%>`, `<%=clients.Nombre%>`, `<%=clients.Correo %>`,`<%=clients.Telefono%>`,`<%=clients.TotalCompras%>`)" data-bs-target="#modificarCliente"><i class="fa fa-edit"></i> Modificar</button>
-                                    <button type="button" class="button button2" data-bs-toggle="modal" onclick="camposCliente(`<%=clients.id %>`, `<%=clients.Nombre %>`, `<%=clients.Correo %>`,`<%=clients.Telefono %>`,`<%=clients.TotalCompras %>`)" data-bs-target="#eliminarCliente"><i class="fa fa-save"></i> Eliminar</button>
+                                    <button type="button" class="button button1" data-bs-toggle="modal" onclick="editarCliente(`<%=clients.id%>`, `<%=clients.Nombre%>`, `<%=clients.Correo %>`,`<%=clients.Telefono%>`,`<%=clients.TotalCompras%>`)" data-bs-target="#modificarCliente"><i class="fa fa-edit"></i> Modificar</button>
+                                    <button type="button" class="button button2" data-bs-toggle="modal" data-bs-target="#eliminarCliente"><i class="fa fa-save"></i> Eliminar</button>
                                 </td>
 
 
@@ -162,32 +162,34 @@
         <div class="modal fade" id="modificarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h3 class="modal-title fs-5" id="exampleModalLabel">Modificar Cliente</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
+
                         <div class="modal-body">
-                            <form id="/api/modificar-cliente" method="put">
+                            <form action="modificarCliente" method="post">
                                 
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">ID:</label>
-                                    <input type="text" class="form-control" id="idcliente" readonly>
+                                    <input type="text" class="form-control" id="idcliente" name="idcl" readonly>
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Nombre:</label>
-                                    <input type="text" class="form-control" id="idnombrecliente">
+                                    <input type="text" class="form-control" id="idnombrecliente" name="nombcliente">
                                   </div>
                                   <div class="mb-3">
                                       <label for="message-text" class="col-form-label">Correo:</label>
-                                      <input type="text" class="form-control" id="idcorreocliente">
+                                      <input type="text" class="form-control" id="idcorreocliente" name="correoclien">
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Teléfono:</label>
-                                    <input type="text" class="form-control" id="idtelefonocliente">
+                                    <input type="text" class="form-control" id="idtelefonocliente" name="telefonocl">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Total compras:</label>
-                                    <input type="text" class="form-control" id="idtotalcompras">
+                                    <input type="text" class="form-control" id="idtotalcompras" name="totalcompras">
                                 </div>
                         
 
@@ -209,7 +211,7 @@
                 <div class="modal-content">
                     
                     <div class="modal-body">
-                        <form id="eliminarPr" method="post">
+                        <form action="eliminarPr" method="post">
                             <h4>Está seguro de eliminar cliente?</h4>
                         </form>
                     </div>
@@ -230,7 +232,7 @@
     </footer>
 
     <script>
-        function camposCliente(id,nombre,correo,telefono,totalcompras) {
+        function editarCliente(id,nombre,correo,telefono,totalcompras) {
             idcliente.value = id,
             idnombrecliente.value = nombre,
             idcorreocliente.value = correo,

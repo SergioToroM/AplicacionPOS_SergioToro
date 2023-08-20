@@ -145,7 +145,8 @@
                                 <td>
                                     <%=listproducts.stock %>
                                 </td>
-                                <td><button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto" onclick="editarProducto(`<%=listproducts.id %>`,`<%=listproducts.referencia %>`,`<%=listproducts.nombre %>`,`<%=listproducts.descripcion %>`,`<%=listproducts.precio %>`,`<%=listproducts.stock %>`)"><i class="fa fa-edit"></i> Modificar</button>
+                                <td>
+                                    <button type="button" class="button button1" data-bs-toggle="modal" data-bs-target="#modificarProducto" onclick="editarProducto(`<%=listproducts.id %>`,`<%=listproducts.referencia %>`,`<%=listproducts.nombre %>`,`<%=listproducts.descripcion %>`,`<%=listproducts.precio %>`,`<%=listproducts.stock %>`)"><i class="fa fa-edit"></i> Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal" data-target="#eliminarProducto"><i class="fa fa-close"></i> Eliminar</button></td>
 
 
@@ -169,7 +170,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                         <div class="modal-body">
-                            <form id="modifProducto" method="post">
+                            <form action="modifProducto" method="post">
                                 
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">ID:</label>
@@ -218,7 +219,7 @@
                     </div> -->
 
                     <div class="modal-body">
-                        <form id="eliminarPr" method="post">
+                        <form action="eliminarPr" method="post">
                             <h4>Está seguro de eliminar artículo?</h4>
                         </form>
                     </div>
