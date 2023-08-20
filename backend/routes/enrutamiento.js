@@ -11,7 +11,7 @@ router.post('/agregar', controller.createClientes)
 router.get('/vendedores', controller.vendedores)
 router.get('/listarvendedores', controller.dbvendedores)
 router.post('/editarVendedor', controller.modificarVend)
-router.post('/eliminarVendedor', controller.eliminarVendedor)
+router.post('/eliminarVendedor/:id', controller.eliminarVendedor)
 router.post('/agregarv', controller.createVendedores)
 
 router.get('/productos', controller.ventaproductos)

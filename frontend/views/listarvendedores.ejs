@@ -169,7 +169,7 @@
                     </div>
 
                     <div class="modal-body">
-                        <form action="editarVendedor" method="post">
+                        <form id="editarVendedor" action="editarVendedor" method="post">
 
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">ID:</label>
@@ -177,19 +177,19 @@
                             </div>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Nombre:</label>
-                                <input type="text" class="form-control" id="idnombrevendedor" name="nombrevend" >
+                                <input type="text" class="form-control" id="idnombrevendedor" name="idnombrevendedor" >
                             </div>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Documento:</label>
-                                <input type="text" class="form-control" id="iddocvendedor" name="docvend">
+                                <input type="text" class="form-control" id="iddocvendedor" name="iddocvendedor">
                             </div>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Correo:</label>
-                                <input type="text" class="form-control" id="idcorreovendedor" name="correovend">
+                                <input type="text" class="form-control" id="idcorreovendedor" name="idcorreovendedor">
                             </div>
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Ventas despachadas:</label>
-                                <input type="text" class="form-control" id="idventasdespachadas" name="ventasvend">
+                                <input type="text" class="form-control" id="idventasdespachadas" name="idventasdespachadas">
                             </div>
 
                             <button type="submit" class="button button1" >Guardar cambios</button>
@@ -243,13 +243,11 @@
             iddocvendedor.value = documento;
             idcorreovendedor.value = correo;
             idventasdespachadas.value = ventasdesp;
-
-        
         }
 
         function eliminarVendedor(id){
             var form = eliminarV;
-            form.setAttribute('action', `/backend/controller/eliminarVendedor/${id}`);
+            form.setAttribute('action', `/api/listarvendedores${id}`);
         }
 
     </script>
