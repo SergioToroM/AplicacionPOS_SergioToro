@@ -2,6 +2,7 @@ const { truncate } = require('fs')
 const mongoose = require('../config/Database')
 
 const ProductsSchema = new mongoose.Schema({
+  _id: { type: String },
   referencia: { type: String, required: true },
   nombre: { type: String, required: true },
   descripcion: { type: String },

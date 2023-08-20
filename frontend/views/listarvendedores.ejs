@@ -10,93 +10,94 @@
     <%- include('head'); %>
         <title>Lista vendedores</title>
 
-        <style>
-            .button {
-                border: none;
-                color: white;
-                padding: 4px 18px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 13px;
-                margin: 4px 2px;
-                transition-duration: 0.4s;
-                cursor: pointer;
-            }
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 4px 18px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
 
-            .button1 {
-                background-color: white;
-                color: black;
-                border: 2px solid #4CAF50;
-            }
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
 
-            .button1:hover {
-                background-color: #4CAF50;
-                color: white;
-            }
+        .button1:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-            .button2 {
-                background-color: white;
-                color: black;
-                border: 2px solid #df3b3b;
-            }
+        .button2 {
+            background-color: white;
+            color: black;
+            border: 2px solid #df3b3b;
+        }
 
-            .button2:hover {
-                background-color: #df3b3b;
-                color: white;
-            }
+        .button2:hover {
+            background-color: #df3b3b;
+            color: white;
+        }
 
-            h1,
-            h2 {
-                text-align: center;
-                font-size: 60px;
-                font-family: 'Rogthem';
-            }
+        h1,
+        h2 {
+            text-align: center;
+            font-size: 60px;
+            font-family: 'Rogthem';
+        }
 
-            #customers {
-                font-family: Arial, Helvetica, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-            #customers td,
-            #customers th {
-                border: 1px solid #ddd;
-                padding: 5px;
-            }
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
 
-            #customers tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
 
-            #customers tr:hover {
-                background-color: #ddd;
-            }
+        #customers tr:hover {
+            background-color: #ddd;
+        }
 
-            #customers th {
-                text-align: center;
-                background-color: #188a60;
-                color: white;
-            }
+        #customers th {
+            text-align: center;
+            background-color: #188a60;
+            color: white;
+        }
 
-            #customers td {
-                text-align: center;
-            }
+        #customers td {
+            text-align: center;
+        }
 
-            #logo-empresa {
-                color: white;
-                text-shadow:
-                    0 0 5px white,
-                    0 0 10px white,
-                    0 0 15px white,
-                    0 0 20px lime,
-                    0 0 30px lime,
-                    0 0 40px lime,
-                    0 0 55px lime,
-                    0 0 75px lime;
+        #logo-empresa {
+            color: white;
+            text-shadow:
+                0 0 5px white,
+                0 0 10px white,
+                0 0 15px white,
+                0 0 20px lime,
+                0 0 30px lime,
+                0 0 40px lime,
+                0 0 55px lime,
+                0 0 75px lime;
 
-            }
+        }
         </style>
+        
 </head>
 
 <body class="container">
@@ -141,7 +142,7 @@
                                 </td>
                                 <td><button type="button" class="button button1" data-bs-toggle="modal"
                                         onclick="modificarVendedor(`<%=sellers.id %>`,`<%=sellers.Nombre %>`,`<%=sellers.Documento %>`,`<%=sellers.Correo %>`,`<%=sellers.VentasDespachadas %>`)"
-                                        data-bs-target="#editarVendedor"><i class="fa fa-edit"></i>
+                                        data-bs-target="#editarVend"><i class="fa fa-edit"></i>
                                         Modificar</button>
                                     <button type="button" class="button button2" data-toggle="modal"
                                         data-target="#eliminarVen"><i class="fa fa-close"></i> Eliminar</button>
@@ -156,7 +157,7 @@
         </div>
 
         <!-- Modal modificar-->
-        <div class="modal fade" id="editarVendedor" tabindex="-1" aria-labelledby="exampleModalLabel"
+        <div class="modal fade" id="editarVend" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">

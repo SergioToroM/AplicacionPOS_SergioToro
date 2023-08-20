@@ -163,6 +163,7 @@
         <div class="modal fade" id="modificarProducto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <h3 class="modal-title fs-5" id="exampleModalLabel">Modificar artículo</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -172,35 +173,35 @@
                                 
                                 <div class="mb-3">
                                     <label for="recipient-name" class="col-form-label">ID:</label>
-                                    <input type="text" class="form-control" id="idproducto" readonly>
+                                    <input type="text" class="form-control" id="_id" name="_id" readonly>
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Referencia:</label>
-                                    <input type="text" class="form-control" id="idreferenciaprod">
+                                    <input type="text" class="form-control" id="idreferenciaprod" name="refProd">
                                   </div>
                                   <div class="mb-3">
                                       <label for="message-text" class="col-form-label">Nombre:</label>
-                                      <input type="text" class="form-control" id="idnombreproducto">
+                                      <input type="text" class="form-control" id="idnombreproducto" name="nombreProd">
                                   </div>
                                   <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Descripción:</label>
-                                    <input type="text" class="form-control" id="iddescripcionprod">
+                                    <input type="text" class="form-control" id="iddescripcionprod" name="descripc">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Precio:</label>
-                                    <input type="text" class="form-control" id="idprecioprod">
+                                    <input type="text" class="form-control" id="idprecioprod" name="precioProd">
                                 </div>
                                 <div class="mb-3">
                                     <label for="message-text" class="col-form-label">Stock:</label>
-                                    <input type="text" class="form-control" id="idstockprod">
+                                    <input type="text" class="form-control" id="idstockprod" name="stock">
                                 </div>
                         
+                                    <!-- <button type="submit" class="button button2" data-bs-dismiss="modal">Cerrar</button> -->
+                                    <button type="submit" class="button button1">Guardar cambios</button>
 
                             </form>
                         </div>
-                     <div class="modal-footer">
-                        <button type="submit" class="button button2" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="button button1">Guardar cambios</button>
+                     
                     </div>
                 </div>
             </div>
@@ -237,16 +238,14 @@
     </footer>
 
     <script>
-        function editarProducto(idpr,referencia,nombrepr,descripcionpr,preciopr,stock) {
-            idproducto.value = idpr,
-            idreferenciaprod.value = referencia,
-            idnombreproducto.value = nombrepr,
-            iddescripcionprod.value = descripcionpr,
-            idprecioprod.value = preciopr,
-            idstockprod.value = stock
-
-            var form = modifProducto;
-            form.setAttribute('action', `/controller/editarProducto/${id})`);
+        function editarProducto(idpr,referencia,nombre,descripcion,precio,stock) {
+            console.log(idpr,referencia,nombre,descripcion, precio, stock)
+            _id.value = idpr;
+            idreferenciaprod.value = referencia;
+            idnombreproducto.value = nombre;
+            iddescripcionprod.value = descripcion;
+            idprecioprod.value = precio;
+            idstockprod.value = stock;
         }
 
         function eliminarProducto(id){

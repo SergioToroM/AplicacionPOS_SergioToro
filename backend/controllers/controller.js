@@ -116,18 +116,11 @@ exports.createProducto = async (req, res) => {
   console.log('Productos')
 }
 
+// Editar productos
 exports.editarProducto = async (req, res) => {
-  const n = await products.findByIdAndUpdate(
-    id = req.params.id,
-    {
-      producto: req.body.idproducto,
-      referencia: req.body.idreferenciaprod,
-      nombre: req.body.idnombreproducto,
-      descripcion: req.body.iddescripcionprod,
-      precio: req.body.idprecioprod,
-      stock: req.body.idstockprod
-    }
-  )
+  console.log(req.body)
+  const idprod = req.body._id
+  await products.findByIdAndUpdate(idprod, req.body)
   res.redirect('/api/listarproductos')
 }
 
