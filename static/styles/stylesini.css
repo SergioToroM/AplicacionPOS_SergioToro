@@ -38,7 +38,7 @@ body {
 .titulo {
     font-size: 250%;
     /* color: #bbe1fa; */
-    color: white;
+    color: red;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -159,7 +159,7 @@ body {
 
 .mifuente {
     font-family: Rogthem;
-    font-size:45px;
+    font-size:40px;
     color: black;
     text-shadow:
         0 0 5px white,
