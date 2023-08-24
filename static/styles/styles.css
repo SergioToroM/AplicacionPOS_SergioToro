@@ -1,0 +1,106 @@
+
+h1, h2 {
+    font-family: 'Rogthem';
+    text-align: center;
+    font-size: 60px;
+}
+
+
+#logo-empresa {
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-shadow:
+        0 0 5px white,
+        0 0 10px white,
+        0 0 15px white,
+        0 0 20px lime,
+        0 0 30px lime,
+        0 0 40px lime,
+        0 0 55px lime,
+        0 0 75px lime;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+#registrar {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+#registrar:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#edit {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+#edit:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#delete {
+    background-color: white;
+    color: black;
+    border: 2px solid #df3b3b;
+}
+
+#delete:hover {
+    background-color: #df3b3b;
+    color: white;
+}
+
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    text-align: center;
+    background-color: #188a60;
+    color: white;
+}
+
+#customers td {
+    text-align: center;
+}
+

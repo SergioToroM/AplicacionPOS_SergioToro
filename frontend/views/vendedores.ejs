@@ -10,59 +10,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="/frontend/public/styles/styles.css" />
+    <link rel="stylesheet" href="../static/styles/styles.css">
     
     <%- include('head'); %>
-    <title>Módulo Vendedores</title>
+    <title>FreakStore - Módulo Vendedores</title>
     
-    <style>
-        h1 {
-            text-align: center;
-            font-size: 60px;
-            font-family: 'Rogthem';
-        }
-
-        .button {
-          border: none;
-          color: white;
-          padding: 8px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 15px;
-          margin: 4px 2px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-        }
-        
-        .button1 {
-          background-color: white; 
-          color: black; 
-          border: 2px solid #4CAF50;
-        }
-        
-        .button1:hover {
-          background-color: #4CAF50;
-          color: white;
-        }
-
-        #logo-empresa {
-        
-          color: white;
-          text-shadow:
-              0 0 5px white,
-              0 0 10px white,
-              0 0 15px white,
-              0 0 20px lime,
-              0 0 30px lime,
-              0 0 40px lime,
-              0 0 55px lime,
-              0 0 75px lime;
-
-        }
-
-    </style>
-
-
+    
 
 </head>
 <body>
@@ -73,50 +26,10 @@
 <body class="container">
 <header>
     
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-      <div class="container-fluid">
-          <a class="navbar-brand fs-3" href="#" id="logo-empresa">FreakStore</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse d-flex justify-content-between" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Clientes</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/api/clientes">Registrar clientes</a></li>
-                        <li><a class="dropdown-item" href="/api/listarclientes">Listar clientes</a></li>
-                    
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/api/registrarproductos">Registrar productos</a></li>
-                        <li><a class="dropdown-item" href="/api/listarproductos">Listar productos</a></li>
-                        <li><a class="dropdown-item" href="/api/productos">Catálogo</a></li>
-                    
-                    </ul>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Clientes</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="#">- Empty -</a>
-                </li>
-            </ul>
-              <ul>
-
-              </ul>
-          </div>
-      </div>
-  </nav>
+    <%- include('header'); %>
 
 </header>
 
-<%- include('header'); %>
 <main><br><br><br>
     <div class="form-group">
         <h1 style="text-align: center;">Registro vendedores</h1>
@@ -125,7 +38,7 @@
             Documento: <input class="form-control" type="text" name="Documento" id="iddocumento"><br>
             Correo: <input class="form-control" type="email" name="Correo" id="idcorreo"><br>
             Ventas despachadas: <input class="form-control" type="text" name="VentasDespachadas" id="idventasDespachadas"><br>
-            <button class="button button1" type="submit" placeholder=".form-control-lg">Registrar</button>
+            <button class="button button1" id="registrar" type="submit" placeholder=".form-control-lg">Registrar</button>
     </form>
 </main>
 

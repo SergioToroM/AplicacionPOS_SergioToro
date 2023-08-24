@@ -9,59 +9,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/styles/styles.css">
 
     <%- include('head'); %>
-    <title>Módulo registro productos</title>
+    <title>FreakStore - Módulo registro productos</title>
     
-    <style>
-        h1, h2 {
-            text-align: center;
-            font-size: 60px;
-            font-family: 'Rogthem';
-        }
-        clientes
-        .button {
-          border: none;
-          color: white;
-          padding: 8px 32px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 15px;
-          margin: 4px 2px;
-          transition-duration: 0.4s;
-          cursor: pointer;
-        }
-        
-        .button1 {
-          background-color: white; 
-          color: black; 
-          border: 2px solid #4CAF50;
-        }
-        
-        .button1:hover {
-          background-color: #4CAF50;
-          color: white;
-        }
-
-        #logo-empresa {
-        
-          color: white;
-          text-shadow:
-              0 0 5px white,
-              0 0 10px white,
-              0 0 15px white,
-              0 0 20px lime,
-              0 0 30px lime,
-              0 0 40px lime,
-              0 0 55px lime,
-              0 0 75px lime;
-
-        }
-
-    </style>
-
-
 
 </head>
 
@@ -79,7 +31,7 @@
             Descripción: <input class="form-control" type="text" name="descripcion" id="iddescripcionpr"><br>
             Precio: <input class="form-control" type="text" name="precio" id="idprecio"><br>
             Stock: <input class="form-control" type="text" name="stock" id="idstock"><br>
-            <button class="button button1" type="submit" placeholder=".form-control-lg">Registrar</button>
+            <button class="button button1" id="registrar" type="submit" placeholder=".form-control-lg">Registrar</button>
        </form>
     </div>
 </main>
