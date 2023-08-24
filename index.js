@@ -13,6 +13,7 @@ app.use(express.static('static'));
 app.use('/static', express.static(__dirname+'/static'));
 
 
+
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, './frontend/views'))
 app.use(express.urlencoded({ extended: true }))
