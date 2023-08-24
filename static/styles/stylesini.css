@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Rogthem;
+    src: local("Roghtem"), url(Rogthem.ttf);
+    font-weight: bold;
+    
+}
+
 body {
     font-family: 'Overpass', sans-serif;
     font-weight: normal;
