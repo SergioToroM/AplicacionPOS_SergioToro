@@ -1,8 +1,10 @@
 @font-face {
     font-family: Rogthem;
-    src: local("Roghtem"), url(Rogthem.ttf);
-    font-weight: bold;
-    
+    src: local("Roghtem"), format('ttf');
+}
+
+.mifuente {
+    font-family: "Rogthem";
 }
 
 body {
@@ -153,7 +155,7 @@ body {
     font-size: 100%;
 }
 
-h1 {
+.mifuente {
     font-family: Rogthem;
     font-size:45px;
     color: black;
