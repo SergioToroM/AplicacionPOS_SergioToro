@@ -34,15 +34,27 @@
                             
                         </ul>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/api/listarproductos">Listar usuarios</a></li>
+                            <li><a class="dropdown-item" href="/api/registrarproductos">Registrar usuarios</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul>
                     <div class="carritoecompras">
+                        <button class="btn btn-dark" id="login" type="button" 
+                            data-bs-toggle="offcanvas" data-bs-target="#log"><i class="bi bi-box-arrow-in-right"></i>
+
+                        </button>
                         <button class="btn btn-dark" id="carritonavbar" type="button" onclick="pintarCarrito()"
                             data-bs-toggle="offcanvas" data-bs-target="#compras"><i class="bi bi-cart4"></i>
 
                         </button>
                     </div>
                 </ul>
+                
                     
                     
                     

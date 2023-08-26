@@ -24,7 +24,7 @@ app.use('/api', mirouter)
 
 const PORT = 4080
 
-app.get('/', (req, res) => { res.render('../views/landing') })
+app.get('/', (req, res) => { res.render('../views/clientes') })
 
 app.listen(process.env.PORT || 4080, () => {
   console.log('En línea, puerto', PORT)

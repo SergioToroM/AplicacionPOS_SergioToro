@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+    <%- include('head'); %>
+        <title>FreakStore - Lista usuarios</title>
+        
+
+</head>
+
+<body class="container">
+
+<header>
+    <%- include('header'); %>
+</header>
+
+    <main><br><br><br>
+        <div class="form-group">
+            <form>
+                <h2>Lista usuarios</h2>
+                <table id="customers">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Documento</th>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>Rol</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <% listaclientes.forEach(function(usuarios) { %>
+                            <tr>
+                                <td>
+                                    <%=usuarios.id %>
+                                </td>
+                                <td>
+                                    <%=usuarios.Documento %>
+                                </td>
+                                <td>
+                                    <%=usuarios.Nombre %>
+                                </td>
+                                <td>
+                                    <%=usuarios.Correo %>
+                                </td>
+                                <td>
+                                    <%=usuarios.Rol %>
+                                </td>
+                                <td>
+                                    <button type="button" id="edit" class="button button1" data-bs-toggle="modal" onclick="editarCliente(`<%=clients.id%>`, `<%=clients.Nombre%>`, `<%=clients.Correo %>`,`<%=clients.Telefono%>`,`<%=clients.TotalCompras%>`)" data-bs-target="#modificarCliente"><i class="fa fa-edit"></i> Modificar</button>
+                                    <button type="button" id="delete" class="button button2" data-bs-toggle="modal" data-bs-target="#eliminarCliente"><i class="fa fa-save"></i> Eliminar</button>
+                                </td>
+
+
+                            </tr>
+                            <% }); %>
+                    </tbody>
+
+                </table>
+            </form>
+
+        </div>
+
+
+  
+        <!-- Modal modificar-->
+        <div class="modal fade" id="modificarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 class="modal-title fs-5" id="exampleModalLabel">Modificar Usuario</h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                        <div class="modal-body">
+                            <form action="modificarCliente" method="post">
+                                
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">ID:</label>
+                                    <input type="text" class="form-control" id="idcliente" name="idcl" readonly>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Nombre:</label>
+                                    <input type="text" class="form-control" id="idnombrecliente" name="nombcliente">
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message-text" class="col-form-label">Correo:</label>
+                                      <input type="text" class="form-control" id="idcorreocliente" name="correoclien">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Teléfono:</label>
+                                    <input type="text" class="form-control" id="idtelefonocliente" name="telefonocl">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Total compras:</label>
+                                    <input type="text" class="form-control" id="idtotalcompras" name="totalcompras">
+                                </div>
+                        
+                                <button type="submit" id="registrar" class="button button1" >Guardar cambios</button>
+
+                            </form>
+                        </div>
+                     <div class="modal-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  
+        <!-- Modal eliminar -->
+        <div class="modal fade" id="eliminarCliente" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-body">
+                        <form action="eliminarPr" method="post">
+                            <h4>Está seguro de eliminar cliente?</h4>
+                        </form>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="button button2" data-bs-dismiss="modal">NO</button> -->
+                        <button type="submit" id="delete" class="button button1" data-bs-dismiss="modal">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <%- include('footer'); %>
+    </footer>
+
+    <script>
+        function editarCliente(id,nombre,correo,telefono,totalcompras) {
+            idcliente.value = id,
+            idnombrecliente.value = nombre,
+            idcorreocliente.value = correo,
+            idtelefonocliente.value = telefono,
+            idtotalcompras.value = totalcompras
+        }
+
+        
+      </script>
+
+</body>
+
+</html>

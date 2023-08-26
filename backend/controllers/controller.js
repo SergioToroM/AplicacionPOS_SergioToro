@@ -32,7 +32,10 @@ exports.createClientes = async (req, res) => {
   Clientes.save()
   res.redirect('/api/listarclientes')
   console.log('Clientes')
+  // const usuario = new usuario({ })
 }
+
+
 
 exports.editarCliente = async (req, res) => {
   console.log(req.body)
@@ -147,8 +150,8 @@ exports.eliminarProducto = async (req, res) => {
 }
 
 
-exports.usuarios = (req, res) => {
-  res.render('usuarios')
+exports.regUsuarios = (req, res) => {
+  res.render('registrousuarios')
 }
 
 // Registrar usuarios
@@ -162,9 +165,27 @@ exports.createUsuario = async (req, res) => {
     Password: req.body.Password
   })
   await user.save()
-  // res.redirect('/api/listarproductos')
+  res.redirect('/api/registrousuarios')
   // console.log('Productos')
 }
+
+exports.usuario = async (req, res) => {
+  const usuarioInfo = await usuario.findOne({ correo: req.body.correo});
+
+  console.log(usuarioInfo);
+
+  const passUser = req.body.password
+
+  if (usuarioInfo.password === passUser){
+    console.log(true);
+  }
+
+  if (usuarioInfo.rol === 'admin') {
+    res.render('inicio');
+  }else if(usuarioInfo.rol === 'clientes'){
+    res.render('productos', {todosproductos: catalogo})
+  }
+};
 
 
 

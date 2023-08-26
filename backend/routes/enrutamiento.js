@@ -21,7 +21,11 @@ router.post('/modifProducto', controller.editarProducto)
 router.post('/eliminarProducto/:id', controller.eliminarProducto)
 router.post('/registrarproductos', controller.createProducto)
 
+router.get('/registrousuarios', controller.regUsuarios)
 router.post('/agregarUser', controller.createUsuario)
+router.post('/admin', controller.usuario)
+
+
 
 // router.post('/loginform', controller.usuarios)
 

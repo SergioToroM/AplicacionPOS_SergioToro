@@ -24,8 +24,9 @@
                     Bienvenido
                     <h1>FreakStore</h1>
                 </div>
-                <form id="loginform" method="post">
-                    <input type="email" id="usuario" name="usuario" placeholder="Usuario" required>
+                
+                <form id="loginform" action="/api/admin" method="post">
+                    <input type="email" id="correo" name="correo" placeholder="Usuario" required>
 
                     <input type="password" id="password" placeholder="Contraseña" name="password" required>
                 <!-- </form>
@@ -52,34 +53,6 @@
         </div>
     </div>
     
-
-    <script>
-        function ingresoSesion() {
-            const usuario = req.body.correoUsuario
-            const password = req.body.passwordUsuario
-            const validarUser = await Modelos.findOne({ correoUsuario: correo })
-            
-
-            console.log(user, pass);
-
-            if (user == user && pass == pass){
-                redirect.location.href = '/api/productos';
-                localStorage.Usuario = user
-            }else{
-                alert('Error')
-            }
-        }
-
-        if(validarUser.contrasenaVendedor == contrasena) {
-            res.cookie('usuario', `$validarUser._id)`, {
-                httpOnly: true,
-            });
-        }
-
-        
-
-
-    </script>
 
     
 
