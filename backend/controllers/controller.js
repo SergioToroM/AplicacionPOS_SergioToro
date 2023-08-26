@@ -3,8 +3,8 @@ const vendedor = require('../models/vendedores')
 const products = require('../models/productos')
 const listarproducts = require('../models/productos')
 const agregarproduct = require('../models/productos')
+const usuario = require('../models/usuarios')
 // const graficos = require('../models/grafico')
-// const productos = require('../models/productos')
 // const descargarExcel = require ('../models/productos');
 
 /// CLIENTES
@@ -147,6 +147,24 @@ exports.eliminarProducto = async (req, res) => {
 }
 
 
+exports.usuarios = (req, res) => {
+  res.render('usuarios')
+}
+
+// Registrar usuarios
+exports.createUsuario = async (req, res) => {
+  console.log(req.body)
+  const user = new usuario({
+    Documento: req.body.Documento,
+    Nombre: req.body.Nombre,
+    Correo: req.body.Correo,
+    Rol: req.body.Rol,
+    Password: req.body.Password
+  })
+  await user.save()
+  // res.redirect('/api/listarproductos')
+  // console.log('Productos')
+}
 
 
 

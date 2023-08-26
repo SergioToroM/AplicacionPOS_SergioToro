@@ -21,6 +21,8 @@ router.post('/modifProducto', controller.editarProducto)
 router.post('/eliminarProducto/:id', controller.eliminarProducto)
 router.post('/registrarproductos', controller.createProducto)
 
+router.post('/agregarUser', controller.createUsuario)
+
 // router.post('/loginform', controller.usuarios)
 
 // router.get('/excel', descargarExcel.descargarExcel);

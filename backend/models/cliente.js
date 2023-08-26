@@ -1,6 +1,7 @@
 const mongoose = require('../config/Database')
 
 const ClientesSchema = new mongoose.Schema({
+  _id: { type: String },
   Nombre: { type: String, required: true },
   Telefono: { type: String, required: true },
   TotalCompras: { type: Number },
