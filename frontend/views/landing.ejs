@@ -25,10 +25,10 @@
                     <h1>FreakStore</h1>
                 </div>
                 <form id="loginform" method="post">
-                    <input type="text" name="usuario" placeholder="Usuario" required>
+                    <input type="email" id="usuario" name="usuario" placeholder="Usuario" required>
 
-                    <input type="password" placeholder="Contraseña" name="password" required>
-                </form>
+                    <input type="password" id="password" placeholder="Contraseña" name="password" required>
+                <!-- </form>
 
                 <form action="#" id="selectRol">
                     <label style="color: white;font-size: 16px;" for="lang">Rol    </label>
@@ -37,11 +37,11 @@
                       <option value="Cliente">Cliente</option>
                       <option value="Vendedor">Vendedor</option>
                       
-                    </select>
+                    </select> -->
                     
+                    <button type="submit" title="Ingresar" name="Ingresar">Iniciar sesión</button>
               </form>
 
-                    <button type="submit" title="Ingresar" name="Ingresar">Iniciar sesión</button>
 
                 <div class="pie-form">
                     <a href="#">¿Olvidaste tu contraseña?</a>
@@ -53,6 +53,34 @@
     </div>
     
 
+    <script>
+        function ingresoSesion() {
+            const user = document.getElementById('usuario');
+            const pass = document.getElementById('password');
+            
+
+            console.log(user, pass);
+
+            if (user == user && pass == pass){
+                render.location.href = '/api/productos';
+                localStorage.Usuario = user
+            }else{
+                alert('Error')
+            }
+        }
+
+        if(validarUser.contrasenaVendedor == contrasena) {
+            res.cookie('usuario', `$validarUser._id)`, {
+                httpOnly: true,
+            });
+        }
+
+        const validarUser = await Modelos.findOne({ correoUsuario: correo })
+
+
+    </script>
+
+    
 
 </body>
 

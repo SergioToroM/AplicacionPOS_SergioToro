@@ -146,6 +146,10 @@ exports.eliminarProducto = async (req, res) => {
   res.redirect('/api/listarproductos')
 }
 
+
+
+
+
 // GRAFICO
 // exports.dbgrafico = async(req, res) => {
 //     console.log(graficos);
