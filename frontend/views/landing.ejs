@@ -55,14 +55,15 @@
 
     <script>
         function ingresoSesion() {
-            const user = document.getElementById('usuario');
-            const pass = document.getElementById('password');
+            const usuario = req.body.correoUsuario
+            const password = req.body.passwordUsuario
+            const validarUser = await Modelos.findOne({ correoUsuario: correo })
             
 
             console.log(user, pass);
 
             if (user == user && pass == pass){
-                render.location.href = '/api/productos';
+                redirect.location.href = '/api/productos';
                 localStorage.Usuario = user
             }else{
                 alert('Error')
@@ -75,7 +76,7 @@
             });
         }
 
-        const validarUser = await Modelos.findOne({ correoUsuario: correo })
+        
 
 
     </script>
